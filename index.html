@@ -828,19 +828,46 @@ function handleUrlHash() {
     }
 }
 
-// Add this to your existing window.onload
+// Replace your existing window.onload with this
 window.onload = function() {
+    // Handle URL hash first
     handleUrlHash();
     
-    // Listen for hash changes
+    // Then set up hash change listener
     window.addEventListener('hashchange', handleUrlHash);
     
-    // Your existing code...
-    document.querySelectorAll('.content-section').forEach(s => {
-        s.style.display = 'none';
+    // Your existing code can go here
+    document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.remove('active');
     });
-    document.getElementById('identity').style.display = 'block';
-    document.querySelectorAll('.nav-item')[0].classList.add('active');
+}
+
+// Keep your existing handleUrlHash function
+function handleUrlHash() {
+    const hash = window.location.hash.substring(1);
+    
+    if (hash && document.getElementById(hash)) {
+        document.querySelectorAll('.content-section').forEach(s => {
+            s.style.display = 'none';
+        });
+        document.getElementById(hash).style.display = 'block';
+        
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('onclick')?.includes(`showSection('${hash}')`)) {
+                item.classList.add('active');
+            }
+        });
+        
+        document.getElementById(hash).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    } else {
+        // If no valid hash, show default section
+        document.getElementById('identity').style.display = 'block';
+        document.querySelectorAll('.nav-item')[0].classList.add('active');
+    }
 }
  </script>
 
