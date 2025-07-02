@@ -612,11 +612,12 @@
 .mobile-toggle {
     display: none;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
 
+  
+/* Responsive Design */
+/* Enhanced mobile toggle styles */
 .mobile-toggle {
-    display: block;
+    display: none;
     position: fixed;
     top: 1.5rem;
     left: 1.5rem;
@@ -630,33 +631,42 @@
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    /* Ensure toggle remains visible on scroll */
+    .mobile-toggle {
+        display: block;
+        z-index: 200;
+    }
+
+    /* Prevent content scrolling behind sidebar */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Improve sidebar transitions */
     .sidebar {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 280px;
-        max-width: 320px;
-        height: 100vh;
-        z-index: 100;
         transform: translateX(-100%);
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease-in-out;
     }
 
     .sidebar.open {
         transform: translateX(0);
     }
 
+    /* Main content adjustments */
     .main-content {
-        margin-left: 4rem;
-        padding-left: 1.5rem; /* Default padding when sidebar is closed */
-        padding-top: 5rem;
-        padding-right: 1.5rem;
-        padding-bottom: 2rem;
+        margin-left: 0;
+        padding-left: 1.5rem;
         transition: padding-left 0.3s ease;
     }
 
     .main-content.sidebar-open {
         padding-left: 280px;
+    }
+
+    .main-content.sidebar-closed {
+        padding-left: 1.5rem;
     }
 }
 
@@ -956,10 +966,26 @@ function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     const mainContent = document.querySelector('.main-content');
     
+    // Toggle sidebar open state
     sidebar.classList.toggle('open');
-    mainContent.classList.toggle('sidebar-open');
-    mainContent.classList.toggle('sidebar-closed');
+    
+    // Adjust main content padding based on sidebar state
+    if (sidebar.classList.contains('open')) {
+        mainContent.classList.add('sidebar-open');
+        mainContent.classList.remove('sidebar-closed');
+    } else {
+        mainContent.classList.remove('sidebar-open');
+        mainContent.classList.add('sidebar-closed');
+    }
 }
+
+// Optional: Add touch support for better mobile experience
+document.addEventListener('touchstart', function(e) {
+    if (e.target.closest('.mobile-toggle')) {
+        e.preventDefault();
+        toggleSidebar();
+    }
+}, { passive: false });
   </script>
 
 </body>
