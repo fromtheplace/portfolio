@@ -616,8 +616,8 @@
   
 /* Responsive Design */
 /* Enhanced mobile toggle styles */
+/* Make toggle button float during scroll */
 .mobile-toggle {
-    display: none;
     position: fixed;
     top: 1.5rem;
     left: 1.5rem;
@@ -632,12 +632,14 @@
     transition: all 0.3s ease;
 }
 
+/* Ensure toggle stays visible during scroll */
 @media (max-width: 768px) {
-    /* Ensure toggle remains visible on scroll */
     .mobile-toggle {
-        display: block;
-        z-index: 200;
+        position: sticky;
+        top: 0;
+        background: var(--sidebar-bg);
     }
+}
 
     /* Prevent content scrolling behind sidebar */
     body {
