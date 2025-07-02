@@ -436,8 +436,13 @@
 /* Enhanced mobile toggle styles */
 /* Make toggle button float during scroll */
 .mobile-toggle {
-    position: fixed;
-    top: 1.5rem;
+ display:none;}
+
+/* Ensure toggle stays visible during scroll */
+@media (max-width: 768px) {
+    .mobile-toggle {
+        position: sticky;
+      top: 1.5rem;
     left: 1.5rem;
     z-index: 200;
     background: var(--sidebar-bg);
@@ -448,13 +453,7 @@
     cursor: pointer;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
-}
 
-/* Ensure toggle stays visible during scroll */
-@media (max-width: 768px) {
-    .mobile-toggle {
-        position: sticky;
-        top: 0;
         background: var(--sidebar-bg);
     }
 
