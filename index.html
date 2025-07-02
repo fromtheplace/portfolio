@@ -569,7 +569,7 @@ display:block;
         <a class="nav-item" onclick="showSection('about')">Studio</a>
         <a class="nav-item" onclick="showSection('contact')">Contact</a>
       </div>
-     
+
     </nav>
 
     <main class="main-content">
@@ -799,33 +799,48 @@ document.addEventListener('touchstart', function(e) {
     }
 }, { passive: false });
 
-      // Add this to your existing JavaScript
-function scrollToSection(sectionId) {
-    // Get the section element
-    const section = document.getElementById(sectionId);
+     // Add this to your existing JavaScript
+function handleUrlHash() {
+    // Get the hash from URL (remove the #)
+    const hash = window.location.hash.substring(1);
     
-    // If section exists
-    if (section) {
-        // Add active class to the corresponding nav item
-        document.querySelectorAll('.nav-item').forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('onclick')?.includes(`showSection('${sectionId}')`)) {
-                item.classList.add('active');
-            }
-        });
-        
+    // If there's a hash and it matches a section
+    if (hash && document.getElementById(hash)) {
         // Show the section
         document.querySelectorAll('.content-section').forEach(s => {
             s.style.display = 'none';
         });
-        section.style.display = 'block';
+        document.getElementById(hash).style.display = 'block';
         
-        // Smooth scroll to the section
-        section.scrollIntoView({
+        // Add active class to corresponding nav item
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('onclick')?.includes(`showSection('${hash}')`)) {
+                item.classList.add('active');
+            }
+        });
+        
+        // Scroll to the section
+        document.getElementById(hash).scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
     }
+}
+
+// Add this to your existing window.onload
+window.onload = function() {
+    handleUrlHash();
+    
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleUrlHash);
+    
+    // Your existing code...
+    document.querySelectorAll('.content-section').forEach(s => {
+        s.style.display = 'none';
+    });
+    document.getElementById('identity').style.display = 'block';
+    document.querySelectorAll('.nav-item')[0].classList.add('active');
 }
  </script>
 
