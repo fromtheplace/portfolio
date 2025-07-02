@@ -40,19 +40,19 @@
 
         /* Enhanced Sidebar */
         .sidebar {
-            width: 280px;
-            background: linear-gradient(180deg, var(--sidebar-bg) 0%, #1a1a1a 100%);
-            padding: 0;
-            position: fixed;
-            height: 100vh;
-            left: 0;
-            top: 0;
-            z-index: 100;
-            transition: transform 0.3s ease;
-            transform: translateX(0); 
-            box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+  width: 280px;
+    background: linear-gradient(180deg, var(--sidebar-bg) 0%, #1a1a1a 100%);
+    padding: 0;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transform: translateX(0);  /* Always visible by default */
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
         }
-
+.mobile-toggle {
+ display:none;}
         .logo {
             padding: 3rem 2rem 2rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -431,12 +431,6 @@
             color: var(--accent-orange);
             text-decoration: underline;
         }
- 
-/* Responsive Design */
-/* Enhanced mobile toggle styles */
-/* Make toggle button float during scroll */
-.mobile-toggle {
- display:none;}
 
 /* Ensure toggle stays visible during scroll */
 @media (max-width: 768px) {
@@ -453,8 +447,6 @@
     cursor: pointer;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
-
-        background: var(--sidebar-bg);
     }
 
 
