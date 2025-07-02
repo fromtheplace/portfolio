@@ -798,7 +798,36 @@ document.addEventListener('touchstart', function(e) {
         toggleSidebar();
     }
 }, { passive: false });
-  </script>
+
+      // Add this to your existing JavaScript
+function scrollToSection(sectionId) {
+    // Get the section element
+    const section = document.getElementById(sectionId);
+    
+    // If section exists
+    if (section) {
+        // Add active class to the corresponding nav item
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('onclick')?.includes(`showSection('${sectionId}')`)) {
+                item.classList.add('active');
+            }
+        });
+        
+        // Show the section
+        document.querySelectorAll('.content-section').forEach(s => {
+            s.style.display = 'none';
+        });
+        section.style.display = 'block';
+        
+        // Smooth scroll to the section
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+ </script>
 
 </body>
 </html>
