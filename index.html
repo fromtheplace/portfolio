@@ -1059,11 +1059,19 @@ display:block;
   </div>
 
   <script>
-    function showSection(id) {
+
+      function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+      function showSection(id) {
       document.querySelectorAll('.content-section').forEach(s => s.style.display = 'none');
       document.getElementById(id).style.display = 'block';
       document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
       event.target.classList.add('active');
+    scrollToTop();
     }
 
     // show default
