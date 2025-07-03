@@ -694,21 +694,65 @@ display:block;
     <style>
         
         
+      .timeline-section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 2em;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            border-radius: 2px;
+        }
+        
+        .education-title::after {
+            background: #3498db;
+        }
+        
+        .vocation-title::after {
+            background: linear-gradient(to right, #e74c3c, #9b59b6);
+        }
+        
         .timeline-vertical {
             position: relative;
             padding-left: 40px;
-            
-}
+        }
         
-        
-        .timeline-vertical::before {
+        /* Education timeline - blue gradient */
+        .education-timeline::before {
             content: '';
             position: absolute;
-         left: -0.95rem;
+            left: -0.95rem;
             top: 0;
             bottom: 0;
             width: 3px;
-            background: linear-gradient(to bottom, #3498db 0%, #3498db 30%, #e74c3c 30%, #e74c3c 70%, #9b59b6 70%, #9b59b6 100%);
+            background: linear-gradient(to bottom, #3498db, #2980b9);
+            border-radius: 2px;
+            scale: 0.8;
+        }
+        
+        /* Vocation timeline - red to purple gradient */
+        .vocation-timeline::before {
+            content: '';
+            position: absolute;
+            left: -0.95rem;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #e74c3c 0%, #e74c3c 60%, #9b59b6 60%, #9b59b6 100%);
             border-radius: 2px;
             scale: 0.8;
         }
@@ -724,7 +768,6 @@ display:block;
             transition: all 0.4s ease;
             opacity: 0;
             transform: translateX(30px);
-
         }
         
         .timeline-entry.animate {
@@ -740,7 +783,7 @@ display:block;
         .timeline-entry::before {
             content: '';
             position: absolute;
-             left: -0.95rem;
+            left: -0.95rem;
             top: 30px;
             width: 16px;
             height: 16px;
@@ -863,15 +906,25 @@ display:block;
         .legend-color.work { background: #e74c3c; }
         .legend-color.creative { background: #9b59b6; }
         
-        /* Responsive */
-        @media (max-width: 768px) {
-           
+        /* Desktop layout - side by side */
+        @media (min-width: 769px) {
+            .timelines-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                align-items: start;
+            }
             
+            .timeline-section {
+                margin-bottom: 0;
+            }
+        }
+        
+        /* Mobile layout - stacked */
+        @media (max-width: 768px) {
             .timeline-vertical {
                 padding-left: 30px;
-                column-count: 2;
-}
-            
+            }
             
             .timeline-vertical::before {
                 left: 15px;
@@ -902,10 +955,6 @@ display:block;
         }
         
         @media (max-width: 480px) {
-                        .timeline-vertical {
-             
-                column-count: 1;
-}
             .timeline-entry {
                 padding: 15px 20px;
             }
@@ -915,61 +964,73 @@ display:block;
             }
         }
     </style>
-      
-        <div class="timeline-vertical">
-            <div class="timeline-entry education">
-                <div class="timeline-category">Education</div>
-                <div class="timeline-date">2001-2006</div>
-                <div class="timeline-title">John McGlashan College</div>
-                <div class="timeline-desc">Secondary education with creative electives and foundational design study</div>
+</head>
+<body>
+    <div class="container">
+        <div class="timelines-container">
+            <!-- Education Timeline -->
+            <div class="timeline-section">
+                <h2 class="section-title education-title">Education</h2>
+                <div class="timeline-vertical education-timeline">
+                    <div class="timeline-entry education">
+                        <div class="timeline-category">Education</div>
+                        <div class="timeline-date">2001-2006</div>
+                        <div class="timeline-title">John McGlashan College</div>
+                        <div class="timeline-desc">Secondary education with creative electives and foundational design study</div>
+                    </div>
+                    
+                    <div class="timeline-entry education">
+                        <div class="timeline-category">Education</div>
+                        <div class="timeline-date">2002</div>
+                        <div class="timeline-title">Natcoll (Yoobee)</div>
+                        <div class="timeline-desc">Attained Diploma of Computer Graphic Design (Level 6)</div>
+                    </div>
+                    
+                    <div class="timeline-entry education">
+                        <div class="timeline-category">Education</div>
+                        <div class="timeline-date">2007</div>
+                        <div class="timeline-title">PrintNZ Apprenticeship</div>
+                        <div class="timeline-desc">National Certificate in Printing – Graphic Communication (Level 4), completed during employment at Taieri Print</div>
+                    </div>
+                    
+                    <div class="timeline-entry education">
+                        <div class="timeline-category">Education</div>
+                        <div class="timeline-date">2015-2017</div>
+                        <div class="timeline-title">Otago University – Bachelor of Music</div>
+                        <div class="timeline-desc">Music composition and theory studies (Incomplete)</div>
+                    </div>
+                </div>
             </div>
             
-            <div class="timeline-entry education">
-                <div class="timeline-category">Education</div>
-                <div class="timeline-date">2002</div>
-                <div class="timeline-title">Natcoll (Yoobee)</div>
-                <div class="timeline-desc">Attained Diploma of Computer Graphic Design (Level 6)</div>
-            </div>
-            
-            <div class="timeline-entry work">
-                <div class="timeline-category">Work</div>
-                <div class="timeline-date">2004-2012</div>
-                <div class="timeline-title">Graphic Designer, Taieri Print Ltd</div>
-                <div class="timeline-desc">Eight years of professional design experience in print media and graphic communication</div>
-            </div>
-            
-            <div class="timeline-entry education">
-                <div class="timeline-category">Education</div>
-                <div class="timeline-date">2007</div>
-                <div class="timeline-title">PrintNZ Apprenticeship</div>
-                <div class="timeline-desc">National Certificate in Printing – Graphic Communication (Level 4), completed during employment at Taieri Print</div>
-            </div>
-            
-            <div class="timeline-entry work">
-                <div class="timeline-category">Work</div>
-                <div class="timeline-date">2012-2014</div>
-                <div class="timeline-title">Partner, Consider Inc.</div>
-                <div class="timeline-desc">Business partnership in creative services, developing brand identity and strategic communication solutions</div>
-            </div>
-            
-            <div class="timeline-entry education">
-                <div class="timeline-category">Education</div>
-                <div class="timeline-date">2015-2017</div>
-                <div class="timeline-title">Otago University – Bachelor of Music</div>
-                <div class="timeline-desc">Music composition and theory studies (Incomplete)</div>
-            </div>
-            
-            <div class="timeline-entry creative">
-                <div class="timeline-category">Creative</div>
-                <div class="timeline-date">2018-Present</div>
-                <div class="timeline-title">Videographer & Musician – From The Place / Person Will</div>
-                <div class="timeline-desc">Multidisciplinary creative practice focused on identity, sound, and message. Visual design, livestream production, stage management, video editing, music composition, and community engagement</div>
+            <!-- Vocation Timeline -->
+            <div class="timeline-section">
+                <h2 class="section-title vocation-title">Vocation</h2>
+                <div class="timeline-vertical vocation-timeline">
+                    <div class="timeline-entry work">
+                        <div class="timeline-category">Work</div>
+                        <div class="timeline-date">2004-2012</div>
+                        <div class="timeline-title">Graphic Designer, Taieri Print Ltd</div>
+                        <div class="timeline-desc">Eight years of professional design experience in print media and graphic communication</div>
+                    </div>
+                    
+                    <div class="timeline-entry work">
+                        <div class="timeline-category">Work</div>
+                        <div class="timeline-date">2012-2014</div>
+                        <div class="timeline-title">Partner, Consider Inc.</div>
+                        <div class="timeline-desc">Business partnership in creative services, developing brand identity and strategic communication solutions</div>
+                    </div>
+                    
+                    <div class="timeline-entry creative">
+                        <div class="timeline-category">Creative</div>
+                        <div class="timeline-date">2018-Present</div>
+                        <div class="timeline-title">Videographer & Musician – From The Place / Person Will</div>
+                        <div class="timeline-desc">Multidisciplinary creative practice focused on identity, sound, and message. Visual design, livestream production, stage management, video editing, music composition, and community engagement</div>
+                    </div>
+                </div>
             </div>
         </div>
         
-       
-        </div>
-           <div class="legend">
+        <div class="legend">
             <div class="legend-item">
                 <div class="legend-color education"></div>
                 <span>Education</span>
@@ -982,6 +1043,7 @@ display:block;
                 <div class="legend-color creative"></div>
                 <span>Creative Practice</span>
             </div>
+        </div>
     </div>
     
     <script>
@@ -1000,9 +1062,8 @@ display:block;
                 rootMargin: '50px'
             });
             
-            // Observe all timeline entries
+            // Observe all timeline entries with staggered delays
             timelineEntries.forEach((entry, index) => {
-                // Stagger the animation delays
                 entry.style.transitionDelay = `${index * 0.1}s`;
                 observer.observe(entry);
             });
@@ -1010,7 +1071,6 @@ display:block;
             // Add click interactions
             timelineEntries.forEach(entry => {
                 entry.addEventListener('click', function() {
-                    // Add a subtle pulse effect on click
                     this.style.transform = 'translateX(10px) translateY(-5px) scale(1.02)';
                     setTimeout(() => {
                         this.style.transform = 'translateX(10px) translateY(-5px) scale(1)';
