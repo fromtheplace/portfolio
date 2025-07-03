@@ -696,6 +696,8 @@ display:block;
         .timeline-vertical {
             position: relative;
             padding-left: 40px;
+            column-count: 3;
+}
         }
         
         .timeline-vertical::before {
@@ -864,6 +866,8 @@ display:block;
             
             .timeline-vertical {
                 padding-left: 30px;
+                column-count: 2;
+}
             }
             
             .timeline-vertical::before {
@@ -895,6 +899,10 @@ display:block;
         }
         
         @media (max-width: 480px) {
+                        .timeline-vertical {
+             
+                column-count: 1;
+}
             .timeline-entry {
                 padding: 15px 20px;
             }
