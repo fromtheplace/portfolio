@@ -691,7 +691,329 @@ display:block;
           
           <h2 class="section-title">Timeline & Skills</h2>
 <div class="project">  
-    <style>
+  <style>
+
+
+        .skills-container {
+            max-width: 220mm; /* DLE size width */
+            max-height: 110mm; /* DLE size height */
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .header h2 {
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 0.8em;
+            color: #7f8c8d;
+        }
+
+        .skills-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .skill-name {
+            font-size: 0.85em;
+            font-weight: 500;
+            color: #2c3e50;
+            flex: 1;
+        }
+
+        .skill-years {
+            font-size: 0.7em;
+            color: #7f8c8d;
+            margin-right: 10px;
+        }
+
+        .skill-rating {
+            display: flex;
+            gap: 2px;
+        }
+
+        .star {
+            width: 12px;
+            height: 12px;
+            background: #ecf0f1;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            transition: background 0.2s ease;
+        }
+
+        .star.filled {
+            background: #f39c12;
+        }
+
+        .skill-item:hover .star.filled {
+            background: #e67e22;
+        }
+
+        .legend {
+            grid-column: 1 / -1;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ecf0f1;
+        }
+
+        .legend-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.7em;
+            color: #7f8c8d;
+        }
+
+        .rating-guide {
+            display: flex;
+            gap: 15px;
+        }
+
+        .rating-item {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .mini-star {
+            width: 8px;
+            height: 8px;
+            background: #f39c12;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .skills-container {
+                border: none;
+                max-width: none;
+                max-height: none;
+            }
+        }
+    </style>
+    <div class="skills-container">
+        <div class="header">
+            <h2>Skills & Experience Overview</h2>
+            <p>20+ Years Design Experience | Multimedia Specialist</p>
+        </div>
+
+        <div class="skills-column">
+            <div class="skill-item">
+                <span class="skill-name">Print Design</span>
+                <span class="skill-years">10y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-name">Identity & Branding</span>
+                <span class="skill-years">18y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-name">Production (Offset/Screen/Dye Sub)</span>
+                <span class="skill-years">17y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-name">Adobe Creative Suite</span>
+                <span class="skill-years">20y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-name">Web & Digital Graphics</span>
+                <span class="skill-years">15y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-name">Photography</span>
+                <span class="skill-years">12y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-column">
+            <div class="skill-item">
+                <span class="skill-name">Video Production</span>
+                <span class="skill-years">10y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-name">Audio Production</span>
+                <span class="skill-years">13y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-name">Music Branding</span>
+                <span class="skill-years">10y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-name">Coding & Scripting</span>
+                <span class="skill-years">8y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-name">Project Management</span>
+                <span class="skill-years">15y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span class="skill-name">Problem Solving</span>
+                <span class="skill-years">20y</span>
+                <div class="skill-rating">
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                    <div class="star filled"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-content">
+                <div class="rating-guide">
+                    <div class="rating-item">
+                        <div class="mini-star"></div>
+                        <span>Beginner</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="mini-star"></div>
+                        <div class="mini-star"></div>
+                        <span>Intermediate</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="mini-star"></div>
+                        <div class="mini-star"></div>
+                        <div class="mini-star"></div>
+                        <span>Proficient</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="mini-star"></div>
+                        <div class="mini-star"></div>
+                        <div class="mini-star"></div>
+                        <div class="mini-star"></div>
+                        <span>Advanced</span>
+                    </div>
+                    <div class="rating-item">
+                        <div class="mini-star"></div>
+                        <div class="mini-star"></div>
+                        <div class="mini-star"></div>
+                        <div class="mini-star"></div>
+                        <div class="mini-star"></div>
+                        <span>Expert</span>
+                    </div>
+                </div>
+                <div style="text-align: right;">
+                    <strong>Total Experience: 20+ Years</strong>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+
+
+ <style>
         
         
       .timeline-section {
