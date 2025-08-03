@@ -996,8 +996,8 @@ padding: 0;   background: none;
 
 	p {
   
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  line-height: 1.4;
   
 }
 	
@@ -1121,12 +1121,7 @@ padding: 0rem;}
 
 @media (max-width: 480px) {
 
-	p {
-  
-  font-size: 0.8rem;
-  line-height: 1.4;
-  
-}
+
 	.main-content {
     padding: 1.5rem 1rem;
   }
@@ -1149,4 +1144,3 @@ padding: 0rem;}
                 gap: 1.5rem;
             }
 }
-
