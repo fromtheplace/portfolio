@@ -1101,6 +1101,9 @@ padding: 0;   background: none;
   
     #project-modal{
 padding: 0rem;}
+.modal-description{
+  column-count: 1;
+}
 
 /* Main content adjustments */
     .main-content {
