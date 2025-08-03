@@ -1124,7 +1124,8 @@ padding: 0rem;}
     width: 90%;
     padding: 1.5rem;
   }
-  
+p {font-size:0.8rem;}
+	
   body {
     overflow-x: hidden;
   }
