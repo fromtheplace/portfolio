@@ -993,6 +993,14 @@ padding: 0;   background: none;
 }}
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+
+	p {
+  
+  font-size: 0.9rem;
+  line-height: 1.5;
+  
+}
+	
   .mobile-toggle {
     display: block;
     position: sticky;
@@ -1112,7 +1120,14 @@ padding: 0rem;}
 }
 
 @media (max-width: 480px) {
-  .main-content {
+
+	p {
+  
+  font-size: 0.8rem;
+  line-height: 1.4;
+  
+}
+	.main-content {
     padding: 1.5rem 1rem;
   }
   
@@ -1124,7 +1139,7 @@ padding: 0rem;}
     width: 90%;
     padding: 1.5rem;
   }
-p {font-size:0.8rem;}
+
 	
   body {
     overflow-x: hidden;
