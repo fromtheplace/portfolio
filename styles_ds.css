@@ -1066,9 +1066,8 @@ padding: 0;   background: none;
   
     #project-modal{
 padding: 0rem;}
-
-#modal-description{
-  column-count: 1;
+#modal-description {
+	column-count: 2;
 }
 
 /* Main content adjustments */
@@ -1089,6 +1088,9 @@ padding: 0rem;}
 }
 
 @media (max-width: 360px) {
+#modal-description{
+  column-count: 1;
+}
 
 
 	.main-content {
