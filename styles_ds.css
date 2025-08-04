@@ -971,59 +971,84 @@ padding: 0;   background: none;
   height: 100%;
   border: none;
 }
+
+
+/* DESKTOP RESPONSIVE */
 @media (max-width: 1280px) {
-
-	.hero-video {
+  .hero-video {
     height: 680px;
-}
-
-.video-wrapper {
+  }
+  
+  .video-wrapper {
     height: 700px;
+  }
+  
+  .hero-overlay {
+    padding: 2rem 0% 0 0;
+  }
 }
 
-.hero-overlay {
-  padding: 2rem 0% 0 0;
-
-}}
+/* LARGE TABLET RESPONSIVE */
 @media (max-width: 1024px) {
-	
-	.project-group {
-     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-	.yt-chip, .project img {
-		height: 150px;
-    }
-.yt-chip {
-	width:200px;
-}
-
-	.hero-video {
+  .project-group {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .yt-chip, .project img {
+    height: 150px;
+  }
+  
+  .yt-chip {
+    width: 200px;
+  }
+  
+  .hero-video {
     height: 380px;
-}
-.video-wrapper {
+  }
+  
+  .video-wrapper {
     height: 480px;
+  }
+  
+  .project {
+    border-radius: 10px;
+  }
+  
+  .project img {
+    border-radius: 8px;
+  }
 }
 
-
-}
+/* MEDIUM TABLET RESPONSIVE */
 @media (max-width: 960px) {
-.project-group {
-     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-	}
-.yt-chip, .project img {height: 120px;
-    }
-.yt-chip {width:160px;
-	 }
+  .project-group {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  
+  .yt-chip, .project img {
+    height: 120px;
+  }
+  
+  .yt-chip {
+    width: 160px;
+  }
+  
+  .project {
+    border-radius: 8px;
+  }
+  
+  .project img {
+    border-radius: 6px;
+  }
 }
+
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
-
-	p {
-  font-size: 0.8rem;
-  line-height: 1.4;
+  p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
   
-}
-	
   .mobile-toggle {
     display: block;
     position: sticky;
@@ -1044,7 +1069,12 @@ padding: 0;   background: none;
   
   .main-content {
     margin-left: 0;
-    padding: 2rem 1.5rem;
+    padding: 0 1.5rem 0 0;
+    transition: padding-left 0.3s ease;
+  }
+  
+  .main-content.sidebar-open {
+    padding-left: 190px;
   }
   
   .sidebar {
@@ -1056,10 +1086,6 @@ padding: 0;   background: none;
     transform: translateX(0);
   }
   
-
-  
-
-  
   .section-title {
     font-size: 2rem;
   }
@@ -1067,36 +1093,41 @@ padding: 0;   background: none;
   .credit-list ul {
     column-count: 1;
   }
-
-       
   
-    #project-modal{
-padding: 0rem;}
-#modal-description {
-	column-count: 2;
+  #project-modal {
+    padding: 0rem;
+  }
+  
+  #modal-description {
+    column-count: 2;
+  }
+  
+  .modal-content {
+    padding: 2rem 0;
+  }
+  
+  .project {
+    border-radius: 6px;
+    padding: 0;
+  }
+  
+  .project * {
+    padding: 0 0.5rem;
+  }
+  
+  .project img {
+    border-radius: 4px;
+    padding: 0 0rem;
+  }
 }
 
-/* Main content adjustments */
-    .main-content {
-        margin-left: 0;
-        padding: 0 1.5rem 0 0;
-        transition: padding-left 0.3s ease;
-    }
-
-    .main-content.sidebar-open {
-        padding-left: 190px;
-    }
-	
-
-}
-
+/* SMALL MOBILE RESPONSIVE */
 @media (max-width: 360px) {
-#modal-description{
-  column-count: 1;
-}
-
-
-	.main-content {
+  #modal-description {
+    column-count: 1;
+  }
+  
+  .main-content {
     padding: 1rem;
   }
   
@@ -1104,64 +1135,25 @@ padding: 0rem;}
     padding: 1rem;
   }
   
-
-
-	
+  .modal-content {
+    width: 100vw;
+    padding: 0.8rem 0;
+  }
+  
   body {
     overflow-x: hidden;
   }
-      .project-group {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                gap: 1.5rem;
-            }
+  
+  .project-group {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+  
   .yt-chip, .project img {
-   height: 100px;
+    height: 100px;
   }
-	.yt-chip {width:150px;}
-}
-
-
-
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .project {
-    border-radius: 10px;
-  }
-
-  .project img {
-    border-radius: 8px;
-  }
-
-
-}
-
-/* Medium Tablet */
-@media (max-width: 960px) {
-  .project {
-    border-radius: 8px;
-  }
-
-  .project img {
-    border-radius: 6px;
+  
+  .yt-chip {
+    width: 150px;
   }
 }
-
-/* Mobile */
-@media (max-width: 768px) {
-	  .modal-content {padding: 2rem 0;
-  }
-  .project {
-    border-radius: 6px;
-	  padding:0;
-  }
-  .project * {
-    
-	  padding:0 0.5rem;
-  }
-  .project img {
-    border-radius: 4px;
-  padding:  0 0rem;
-  }
-}
-
