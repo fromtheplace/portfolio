@@ -873,16 +873,22 @@ right: 0.5rem;
 background: #ff3b30;}
 
 
-.modal-prev:hover, .modal-next:hover {
-  background: rgba(0, 0, 0, 0.6);
-}
+.modal-close:hover {
+background: #ff3b30;}
+    .modal-prev:hover{
+background: #ff6b35;}
+
+     .modal-next:hover {
+        background: #8b5cf6;
+       
+    }
 
 .modal-prev {
-  left: -5.5rem;
+  left: -80px;
 }
 
 .modal-next {
-  right: 0.0rem;
+  right: -40px;
 }
 .modal-images img {
 	max-height: 240px;
