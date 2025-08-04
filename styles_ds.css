@@ -1156,7 +1156,10 @@ padding: 0rem;}
     border-radius: 6px;
 	  padding:0;
   }
-
+  .project * {
+    
+	  padding:0 0.5rem;
+  }
   .project img {
     border-radius: 4px;
   }
