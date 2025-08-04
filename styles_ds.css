@@ -983,7 +983,7 @@ padding: 0;   background: none;
 		height: 150px;
     }
 .yt-chip {
-	height:200px;
+	width:200px;
 }
 
 	.hero-video {
@@ -1001,7 +1001,7 @@ padding: 0;   background: none;
 	}
 .yt-chip, .project img {height: 120px;
     }
-.yt-chip {height:160px;
+.yt-chip {width:160px;
 	 }
 }
 /* MOBILE RESPONSIVE */
@@ -1110,7 +1110,7 @@ padding: 0rem;}
   .yt-chip, .project img {
    height: 100px;
   }
-	.yt-chip {height:150px;}
+	.yt-chip {width:150px;}
 }
 
 
