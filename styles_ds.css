@@ -1099,7 +1099,7 @@ padding: 0;   background: none;
   }
   
   #modal-description {
-    column-count: 2;
+    column-count: 1;
   }
   
   .modal-content {
@@ -1123,10 +1123,7 @@ padding: 0;   background: none;
 
 /* SMALL MOBILE RESPONSIVE */
 @media (max-width: 360px) {
-  #modal-description {
-    column-count: 1;
-  }
-  
+
   .main-content {
     padding: 1rem;
   }
