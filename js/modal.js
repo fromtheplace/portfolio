@@ -88,7 +88,7 @@ videos.forEach(video => {
           title: 'Music for People',
 	chips: [ // Secondary YouTube links
           { id: 'XvE0GewwNlI', title: 'St Pauls Cathedral show', type: 'youtube', startTime: 18806},
-        { id: 'HWOwgh6AI5k', title: 'Starters Bar show', type: 'youtube', startTime: 1617},
+        { id: 'HWOwgh6AI5k', title: 'Starters Bar show', type: 'youtube', startTime: 6899},
         { url: 'https://www.odt.co.nz/entertainment/music/powerful-brew-something-new', 
             title: 'ODT Article #1', 
             type: 'url' 
