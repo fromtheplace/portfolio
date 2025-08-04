@@ -1156,7 +1156,7 @@ padding: 0rem;}
 }
 
 /* Small Mobile */
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .project {
     border-radius: 4px;
   }
