@@ -1152,6 +1152,8 @@ padding: 0rem;}
 
 /* Mobile */
 @media (max-width: 768px) {
+	  .modal-content {padding: 2rem 0;
+  }
   .project {
     border-radius: 6px;
 	  padding:0;
