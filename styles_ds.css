@@ -1134,7 +1134,7 @@ padding: 0;   background: none;
   
   .modal-content {
     width: 100vw;
-    padding: 0.8rem 0;
+    padding:2rem 0.8rem;
   }
   
   body {
