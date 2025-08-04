@@ -859,7 +859,7 @@ right: 0.5rem;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.4);
   color: white;
-  border: none;
+  border: 1px solid #d4d4d4;
   font-size: 1.5rem;
   border-radius: 50%;
   height: 40px;
@@ -879,7 +879,7 @@ right: 0.5rem;
 }
 
 .modal-next {
-  right: 0.5rem;
+  right: 0.0rem;
 }
 .modal-images img {
 	max-height: 240px;
