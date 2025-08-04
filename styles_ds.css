@@ -209,6 +209,7 @@ text-align: left	;}
 
 .content-section.active {
   display: block;
+width: 100vw;
 }
 
 @keyframes fadeInUp {
@@ -1153,6 +1154,7 @@ padding: 0rem;}
 @media (max-width: 768px) {
   .project {
     border-radius: 6px;
+	  padding:0;
   }
 
   .project img {
