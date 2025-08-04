@@ -869,6 +869,9 @@ right: 0.5rem;
   transition: background 0.2s;
 
 }
+.modal-close:hover {
+background: #ff3b30;}
+
 
 .modal-prev:hover, .modal-next:hover {
   background: rgba(0, 0, 0, 0.6);
