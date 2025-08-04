@@ -884,11 +884,11 @@ background: #ff6b35;}
     }
 
 .modal-prev {
-  left: -80px;
+  left: -90px;
 }
 
 .modal-next {
-  right: -40px;
+  right: 0px;
 }
 .modal-images img {
 	max-height: 240px;
