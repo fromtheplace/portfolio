@@ -983,7 +983,7 @@ padding: 0;   background: none;
 .hero-overlay {
   padding: 2rem 0% 0 0;
 
-}
+}}
 @media (max-width: 1024px) {
 	
 	.project-group {
@@ -1018,7 +1018,6 @@ padding: 0;   background: none;
 @media (max-width: 768px) {
 
 	p {
-  
   font-size: 0.8rem;
   line-height: 1.4;
   
@@ -1162,6 +1161,7 @@ padding: 0rem;}
   }
   .project img {
     border-radius: 4px;
+  padding:  0 0rem;
   }
 }
 
