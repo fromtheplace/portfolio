@@ -210,6 +210,7 @@ text-align: left	;}
 .content-section.active {
   display: block;
 width: 100vw;
+	padding:0 2%;
 }
 
 @keyframes fadeInUp {
