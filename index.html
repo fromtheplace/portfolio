@@ -9,6 +9,31 @@
     <script>
       
 
+function handleSwipe() {
+    const deltaX = this.touchEndX - this.touchStartX;
+    const deltaY = this.touchEndY - this.touchStartY;
+    const absDeltaX = Math.abs(deltaX);
+    const absDeltaY = Math.abs(deltaY);
+    
+    // Check if it's a valid swipe (minimum distance)
+    if (Math.max(absDeltaX, absDeltaY) < 50) return;
+    
+    // Determines if horizontal or vertical swipe
+    if (absDeltaX > absDeltaY) {
+        if (deltaX > 0) {
+            // Swipe right - go to previous
+            this.previousItem();
+        } else {
+            // Swipe left - go to next  
+            this.nextItem();
+        }
+    } else {
+        if (deltaY > 0) {
+            // Swipe down - close modal
+            this.closeModal();
+        }
+    }
+}
 
 	  // Sidebar mobile toggle
   	function toggleSidebar() {
@@ -346,6 +371,7 @@ function handleUrlHash() {
 </body>
 
 </html>
+
 
 
 
