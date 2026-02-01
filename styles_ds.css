@@ -1131,7 +1131,7 @@ padding: 0;   background: none;
     border-radius: 10px;
   }
     .project-badge, .project h4, .project * {
-            position: relative;
+            
 		font-size:80%;
 		max-width:48%;
     }
