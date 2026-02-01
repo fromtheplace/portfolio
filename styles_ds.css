@@ -448,7 +448,7 @@ linear-gradient( to right, rgba(65, 65, 65, 0.8) 0%, rgba(85, 85, 85, 0.2) 100% 
 .yt-chip {
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 33%;
   margin: 0 10px 10px 0;
   text-decoration: none;
   color: inherit;
@@ -484,7 +484,8 @@ a.url-chips{ display: block;
 }
 
 .url-chip {
-  display: inline-flex;
+  width: 33%;
+	display: inline-flex;
   align-items: center;
   padding: 8px 12px;
   margin: 0 10px 10px 0;
