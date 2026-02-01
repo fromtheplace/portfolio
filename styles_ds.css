@@ -1127,8 +1127,10 @@ padding: 0;   background: none;
   .project {
     border-radius: 10px;
   }
-    .project * {
+    .project h4, .project * {
             position: relative;
+		font-size:80%;
+		
     }
   .project img {
     border-radius: 8px;
