@@ -1133,7 +1133,7 @@ padding: 0;   background: none;
     .project-badge, .project h4, .project * {
             
 		font-size:80%;
-		max-width:48%;
+		
     }
   .project img {
     border-radius: 8px;
