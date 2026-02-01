@@ -138,7 +138,7 @@ videos.forEach(video => {
 			{ url: 'https://www.facebook.com/events/214469309799841/', 
             title: 'Facebook Event', 
             type: 'url',
-			localImage: 'images/nook_poster.jpg'  
+			localImage: 'images/Nook_banner.jpg'  
 			}
 			],
   creditsHTML: `
