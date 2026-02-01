@@ -67,7 +67,7 @@ videos.forEach(video => {
 		 
 		 
 		 ],
-    images: ['images/Nook_banner.jpg', 'images/Nook_poster.jpg'],
+    images: ['images/Nook_banner.jpg', 'images/nook_poster.jpg'],
     description: 'Multicam live video production, live camera projection, live audio mastering, after film production, Long and short-form video publishing.',
     creditsHTML: `
       <div class="credit-list">
