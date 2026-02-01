@@ -993,7 +993,8 @@ background: #ff6b35;}
   right: 0px;
 }
 .modal-images img {
-	max-width: 50%;
+	max-width: 48%;
+	vertical-align:top;
 }
 
 .modal-images img:nth-of-type(2) {
