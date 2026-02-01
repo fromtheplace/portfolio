@@ -458,6 +458,7 @@ linear-gradient( to right, rgba(65, 65, 65, 0.8) 0%, rgba(85, 85, 85, 0.2) 100% 
  display: flex;
   flex-direction: column;
    order: 999;
+	width: 33%;
      
 }
 
@@ -854,7 +855,7 @@ width: 380px;
 
 .lightbox img {
   
-  max-height: 90vh;
+      max-width: 100%;
   border-radius: 10px;
   box-shadow: var(--shadow-deep);
 }
