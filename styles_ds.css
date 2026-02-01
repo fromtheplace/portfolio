@@ -378,9 +378,7 @@ width: 107vw;
 }
  .project-badge {
             position: absolute;
-linear-gradient( to right, rgba(255, 255, 255, 0.5) 0%, rgba(85, 85, 85, 0.2) 100% )
-	 	
-            padding: 0.4rem 0.7rem;
+	 	     padding: 0.4rem 0.7rem;
             border-radius: 6px;
             font-size: 0.8rem;
             font-weight: 500;
