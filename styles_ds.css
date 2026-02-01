@@ -378,12 +378,13 @@ width: 107vw;
 }
  .project-badge {
             position: absolute;
-            background: rgba(0,0,0,0.8);
-            color: white;
+linear-gradient( to right, rgba(65, 65, 65, 0.8) 0%, rgba(85, 85, 85, 0.2) 100% )
+	 		color: white;
             padding: 0.3rem 0.8rem;
-            border-radius: 15px;
+            border-radius: 6px;
             font-size: 0.8rem;
             font-weight: 500;
+	     text-transform: uppercase;
         }
 .project h4 {
   color: var(--primary-white);
@@ -1227,7 +1228,7 @@ padding: 0;   background: none;
   }
   
   .project * {
-    padding: 0 0.5rem;
+    padding: 0.2rem 0.5rem;
         position: relative;
     }
   .project img {
