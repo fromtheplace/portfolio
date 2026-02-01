@@ -137,7 +137,8 @@ videos.forEach(video => {
 			{ id: 'ZjQX8IGXmkk', title: 'View stream #2', type: 'youtube', startTime: 3344},
 			{ url: 'https://www.facebook.com/events/214469309799841/', 
             title: 'Facebook Event', 
-            type: 'url' 
+            type: 'url',
+			localImage: 'images/nook_poster.jpg'  
 			}
 			],
   creditsHTML: `
@@ -149,7 +150,7 @@ videos.forEach(video => {
       </ul>
     </div>
   `,
-   images: ['images/Nook_banner.jpg', 'images/Nook_poster.jpg'],
+   images: ['images/Nook_banner.jpg', 'images/nook_poster.jpg'],
 },
 4: {
 
