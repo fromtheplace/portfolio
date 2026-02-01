@@ -365,7 +365,7 @@ width: 107vw;
 }
 
 .project:hover {
-  transform: translateY(-5px);
+  transform: translateY(5px);
   box-shadow: var(--shadow-deep);
 }
 
