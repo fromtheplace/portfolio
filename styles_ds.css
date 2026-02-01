@@ -1124,7 +1124,9 @@ padding: 0;   background: none;
   .project {
     border-radius: 10px;
   }
-  
+    .project * {
+            position: relative;
+    }
   .project img {
     border-radius: 8px;
   }
@@ -1224,8 +1226,8 @@ padding: 0;   background: none;
   
   .project * {
     padding: 0 0.5rem;
-  }
-  
+        position: relative;
+    }
   .project img {
     border-radius: 4px;
     padding: 0 0rem;
