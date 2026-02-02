@@ -623,11 +623,11 @@ width: 380px;
         }
         
         .skill-list li {
-            color: #fff;
+            color: #000;
             margin-bottom: 0.5rem;
             padding-left: 1rem;
             position: relative;
-			Font-size
+			
         }
         
         .skill-list li:before {
