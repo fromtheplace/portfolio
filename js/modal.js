@@ -20,9 +20,13 @@ lightboxClose.addEventListener('click', () => {
   lightboxOverlay.style.display = 'none';
 });
 
-
-
-
+// Helper function to get ordered project IDs
+function getOrderedProjectIds() {
+  const projects = projectData.projects || projectData;
+  return projectData.project_order 
+    ? projectData.project_order.map(id => String(id))
+    : Object.keys(projects).filter(key => key !== 'project_order').sort((a,b) => Number(a) - Number(b));
+}
 
 const videos = [
 
@@ -47,233 +51,13 @@ videos.forEach(video => {
   container.appendChild(a);
 });
    
-
- const projectData = {
-  1: {
-    title: 'Ōtepoti Hip Hop Hustle 24',
-    youtube: 'AyBXBHIu_Vc', // Main embedded video
-      playlist: 'PL2HwIIvWJIPHkofbvzfQy7apKM2vYth5k',
-	chips: [ // Secondary YouTube links
-      { id: 'J06W1MAzugI', title: 'Shorts/Reels', type: 'youtube'  },
-	    { 	 url: 'https://www.odt.co.nz/news/dunedin/connecting-through-music', 
-            title: 'Press Article #1', 
-            type: 'url' 
-        },
-		{   url: '	https://www.odt.co.nz/news/arts-festival-dunedin/night-%E2%80%98boogieing%E2%80%99-hip-hop-event-hit', 
-            title: 'Press Article #2', 
-            type: 'url' 
-        }
-		 
-		 
-		 
-		 ],
-    images: ['images/Nook_banner.jpg', 'images/nook_poster.jpg'],
-    description: 'Multicam live video production, live camera projection, live audio mastering, after film production, Long and short-form video publishing.',
-    creditsHTML: `
-      <div class="credit-list">
-        <h2>Production Services</h2>
-        <ul>
-          <li>Multicam Live Video Production</li>
-          <li>Live Camera Projection</li>
-          <li>Live Audio Mastering</li>
-          <li>After-Film Production</li>
-          <li>Long-Form & Short-Form Video Publishing</li>
-        </ul>
-		     </div>    `
-  },
-
-        2: {
-		youtube: 'Ct2avwGJqjA',
-		startTime: 0, 
-          title: 'Music for People',
-	chips: [ // Secondary YouTube links
-          { id: 'XvE0GewwNlI', title: 'St Pauls Cathedral show', type: 'youtube', startTime: 18806},
-        { id: 'HWOwgh6AI5k', title: 'Starters Bar show', type: 'youtube', startTime: 6899},
-        { url: 'https://www.odt.co.nz/entertainment/music/powerful-brew-something-new', 
-            title: 'ODT Article #1', 
-            type: 'url' 
-        },
-		
-		{ 
-            url: 'https://www.critic.co.nz/news/article/9500/the-spat-behind-music-for-the-peoples-relocation-f', 
-            title: 'Critic/Te Ārohi Article ', 
-            type: 'url' 
-        },
-		
-		{ 
-            url: 'https://www.odt.co.nz/entertainment/music/people-get-ready', 
-            title: 'ODT Article #2', 
-            type: 'url' 
-        },
-		{ 
-            url: 'https://www.facebook.com/events/197513774778177', 
-            title: 'Facebook Event', 
-            type: 'url' 
-        }
-		],         
-		 images: ['https://via.placeholder.com/600x400'],
-          description: 'In February 2020, just before lockdowns, New New New hosted its largest and most ambitious line-up to date. Music for People featured 11 genre-spanning acts, from rap to rock and everything in between. The follow-up expanded to 32 acts across two distinct sessions: an afternoon in St Paul’s Cathedral and an evening at Starters Bar. <br/>  <strong><em>From the Place</em></strong>  led both the creative and technical direction, developing a cohesive visual identity and a multi-platform production workflow. This included multicam live video streaming for both sessions, real-time on-site camera projection, and live audio mastering for high-fidelity broadcast and archival delivery. All graphic assets—across print, digital, and motion—were designed in-house, along with a custom ecommerce and ticketing platform featuring artist profiles, schedules, and sales integration. The result was a seamless, hybrid production that bridged audiences across spaces and styles, delivering a unified experience in both physical and digital form.',
-		    creditsHTML: `
-		      <div class="credit-list">
-      <h2>Production Services</h2>
-      <ul>
-        <li>Multicam Live Video Production</li>
-        <li>Live Audio Mastering</li>
-        <li>Graphic Design</li>
-        <li>Ecommerce/Ticketing website</li>
-		<li>Music Compostion/Teaser Video Production</li>
-      </ul>
-
-    </div>
-`
-},
-
-3: {
-  title: 'Nook & Cranny Music Fest',
-  youtube: 'WImSgUXMGC0',
-  
-  description: 'Multicam live video production, live camera projection, live audio mastering, after film production, Long and short-form video publishing.',
-   	chips: [			{ id: 'bs1pQGatwVw', title: 'View stream #1', type: 'youtube', startTime: 9178},
-			{ id: 'ZjQX8IGXmkk', title: 'View stream #2', type: 'youtube', startTime: 3344},
-			{ url: 'https://www.facebook.com/events/214469309799841/', 
-            title: 'Facebook Event', 
-            type: 'url',
-			localImage: 'images/Nook_banner.jpg'  
-			}
-			],
-  creditsHTML: `
-    <div class="credit-list">
-      <h2>Production Services</h2>
-      <ul>
-        <li>Multicam Live Video Production</li>
-        <li>Live Camera Projection</li>
-      </ul>
-    </div>
-  `,
-   images: ['images/Nook_banner.jpg', 'images/nook_poster.jpg'],
-},
-4: {
-
-  title: 'Waitati Music Festival',
-  youtube: 'yxH2mg92doY',
-  startTime: 4, 
-  chips: [ // Secondary YouTube links
-          { id: 'XvE0GewwNlI', title: 'St Pauls Cathedral show', type: 'youtube' },
-        { id: 'HWOwgh6AI5k', title: 'Starters Bar show', type: 'youtube' },
-        { 
-            url: 'https://www.odt.co.nz/the-star/music-festival-organisers-taking-cautious-approach', 
-            title: 'Press Article #1', 
-            type: 'url' 
-        },
-		{ 
-            url: 'https://www.odt.co.nz/entertainment/music/people-get-ready', 
-            title: 'Press Article #2', 
-            type: 'url'
-					
-        }, { 
-            url: 'https://www.facebook.com/events/3369191529775528/', 
-            title: 'Facebook Event', 
-            type: 'url' 
-        }
-		
-		
-		
-      ],       
-  description: 'Description for project four. Brief summary of services and outcomes.',
-  creditsHTML: `
-    <div class="credit-list">
-      <h2>Production Credits</h2>
-      <ul>
-        <li>Live Sound Recording</li>
-        <li>Color Grading</li>
-      </ul>
-    </div>
-  `
-},
-5: {
-  youtube: 'iCHbYu7owBQ',
-  title: 'Autumn Arena',
-  description: 'Description for project five. Brief summary of services and highlights.',
-  creditsHTML: `
-    <div class="credit-list">
-      <h2>Creative Roles</h2>
-      <ul>
-     <li>Video Production</li>
-        <li>Composition (EXPJ - Bass Guitar)</li>
-		<li>Graphic Design</li>
-		<li>Event Management (Booking Administrator)</li>
-      </ul>
-    </div>
-  `
-},
-6: {
-  youtube: 'ox4QqeyNykQ',
-  title: 'Ollie Crooks - Take you There',
-  description: 'Description for project six. Event recap, highlights, and interviews.',
-  creditsHTML: `
-    <div class="credit-list">
-      <h2>Technical Team</h2>
-      <ul>
-        <li>Lighting Design</li>
-        <li>Stage Management</li>
-      </ul>
-    </div>
-  `
-},
-7: {
-  youtube: 'DPQRV7qTxT0',
-  title: 'Fonterra - Infographic Video Production',
-    description: 'Behind-the-scenes showcase of creative collaboration.',
-  creditsHTML: `
-    <div class="credit-list">
-      <h2>Media Support</h2>
-      <ul>
-        <li>Video Production</li>
-        <li>Music Composition</li>
-		<li>Project management</li>
-      </ul>
-    </div>
-  `
-},
-8: {
-  youtube: 'Ak7f9zN5irU',
-  title: 'from the place - Youtube Channel',
-  description: 'Documentation of a multidisciplinary performance installation.',
-  creditsHTML: `
-    <div class="credit-list">
-      <h2>Post-Production</h2>
-      <ul>
-        <li>Sound Design</li>
-        <li>Color Correction</li>
-      </ul>
-    </div>
-  `
-},
-9: {
-  youtube: 'PLACEHOLDER_ID_9',
-  title: 'Logo & design examples',
-  description: 'Various examples of logo and design work.',
-  creditsHTML: `
-    <div class="credit-list">
-      <h2>Scope</h2>
-      <ul>
-        <li>Camera Operator</li>
-        <li>VFX & Titles</li>
-      </ul>
-    </div>
-  `
-}
-
-		
-      };
-
-      let currentProjectId = null;
-
  function openModal(projectId) {
-  const data = projectData[projectId];
-  if (!data) return;
+const projects = projectData.projects || projectData;
+const data = projects[projectId];
+if (!data) return;
 
-  currentProjectId = parseInt(projectId);
+
+  currentProjectId = String(projectId);
 
   // Title and description
   modalTitle.textContent = data.title || '';
@@ -542,10 +326,11 @@ if (data.playlist) {
   modal.setAttribute('aria-hidden', 'false');
   modal.style.display = 'flex';
 
-  // Navigation arrows
-  const ids = Object.keys(projectData).map(Number).sort((a, b) => a - b);
-  modalPrev.style.display = currentProjectId === ids[0] ? 'none' : 'block';
-  modalNext.style.display = currentProjectId === ids[ids.length - 1] ? 'none' : 'block';
+  // Navigation arrows - use ordered IDs
+  const ids = getOrderedProjectIds();
+  const currentIndex = ids.indexOf(String(currentProjectId));
+  modalPrev.style.display = currentIndex === 0 ? 'none' : 'block';
+  modalNext.style.display = currentIndex === ids.length - 1 ? 'none' : 'block';
 }
 
 
@@ -562,23 +347,24 @@ function closeModal() {
 }
 
       function showNextProject() {
-        const ids = Object.keys(projectData).map(Number).sort((a, b) => a - b);
-        const index = ids.indexOf(currentProjectId);
+        const ids = getOrderedProjectIds();
+        const index = ids.indexOf(String(currentProjectId));
         if (index < ids.length - 1) openModal(ids[index + 1]);
       }
 
       function showPrevProject() {
-        const ids = Object.keys(projectData).map(Number).sort((a, b) => a - b);
-        const index = ids.indexOf(currentProjectId);
+        const ids = getOrderedProjectIds();
+        const index = ids.indexOf(String(currentProjectId));
         if (index > 0) openModal(ids[index - 1]);
       }
 
-      document.querySelectorAll('.project').forEach(project => {
-        project.addEventListener('click', () => {
-          const id = project.getAttribute('data-project-id');
-          if (id) openModal(id);
-        });
-      });
+document.addEventListener('click', (e) => {
+  const card = e.target.closest('.project');
+  if (!card) return;
+
+  const id = card.getAttribute('data-project-id');
+  if (id) openModal(id);
+});
 
       modalClose.addEventListener('click', closeModal);
       modalNext.addEventListener('click', showNextProject);
