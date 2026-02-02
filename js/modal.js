@@ -154,7 +154,7 @@ videos.forEach(video => {
 },
 4: {
 
-  title: 'Project Four Placeholder',
+  title: 'Waitati Music Festival',
   youtube: 'yxH2mg92doY',
   startTime: 4, 
   chips: [ // Secondary YouTube links
@@ -236,8 +236,8 @@ videos.forEach(video => {
   `
 },
 8: {
-  youtube: 'PLACEHOLDER_ID_8',
-  title: 'Project Eight Placeholder',
+  youtube: 'Ak7f9zN5irU',
+  title: 'from the place - Youtube Channel',
   description: 'Documentation of a multidisciplinary performance installation.',
   creditsHTML: `
     <div class="credit-list">
@@ -251,11 +251,11 @@ videos.forEach(video => {
 },
 9: {
   youtube: 'PLACEHOLDER_ID_9',
-  title: 'Project Nine Placeholder',
-  description: 'Short-form music promo with live elements.',
+  title: 'Logo & design examples',
+  description: 'Various examples of logo and design work.',
   creditsHTML: `
     <div class="credit-list">
-      <h2>Credits</h2>
+      <h2>Scope</h2>
       <ul>
         <li>Camera Operator</li>
         <li>VFX & Titles</li>
