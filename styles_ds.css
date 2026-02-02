@@ -606,14 +606,14 @@ width: 380px;
 						 }
 
 			.skill-category {
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.25);
             padding: 1rem 1.5rem;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 		        }
         
         .skill-category h3 {
-            color: #1a1a1a;
+            color: #fff;
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
@@ -623,7 +623,7 @@ width: 380px;
         }
         
         .skill-list li {
-            color: #000;
+            color: #fff;
             margin-bottom: 0.5rem;
             padding-left: 1rem;
             position: relative;
