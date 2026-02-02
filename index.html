@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -161,7 +162,7 @@ function handleUrlHash() {
             
                     <a class="nav-item" onclick="showSection('projects')">Projects</a>
 			
-                    <a class="nav-item" onclick="showSection('contact')">Contact</a>
+                    <a class="nav-item" onclick="showSection('contact')">More Info</a>
                 </div>
             </nav>
         </aside>
@@ -186,143 +187,20 @@ function handleUrlHash() {
 <section id="projects" class="content-section active">
 
    <div class="about-content">
-                    <h2 class="section-title">From the Place</h2>
-                    <p class="about-intro">building compelling visual narratives and multimedia experiences.
+                    <h2 id="ftp" class="section-title logotitle"><font style="font-size: 80%;">from the </font></br><font style="font-size: 130%;">place</font></h2>
+
+
+
+
+                    <p class="about-intro">Creating + Capturing x Production
 						</p>
-                    
-                      <div class="skills-section">
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h3>Video</h3>
-                                <ul class="skill-list">
-                                    <li>Podcast Production</li>
-									<li>Multicam Live Video</li>
-                                    <li>Video & Motion Graphic production</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Production & Engineering</h3>
-                                <ul class="skill-list">
-                                    <li>Event videography</li>
-                                    <li>Video editing & post production</li>
-                                    <li>Live Audio Production</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Design</h3>
-                                <ul class="skill-list">
-                                    <li>Graphic / Poster Design</li>
-                                    <li>Offset/Digital/Screen Print Production</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-                </div>	
-<h2 class="section-title">Projects</h2>
-  <div class="project-group">
+<div id="projects-container" class="project-group"></div>
+  <script src="js/projects-data.js"></script>
+  <script src="js/render-projects.js"></script>
 
-<!-- Project 1 -->
-    <div class="project" data-project-id="1">
-      <div class="project-badge">Video / Production</div>
-		<img src="images/OHHH+2024+JLP.jpg" alt="Project 1">
-      <h4>Ōtepoti Hip Hop Hustle</h4>
-      <p>Comprehensive event production including brand identity, videography, and live production for one of  New Zealand's premierhiphop summits.</p>
-      
-    </div>
 
-    <!-- Project 2 -->
-    <div class="project" data-project-id="2">
-      <div class="project-badge">Design / Video / Stream / Stage</div>
-		<img src="images/mfp0.jpg" alt="Project 2">
-      <h4>Music for People</h4>
-      <p>Multi-day crowd-sourced music event with coordination across multiple venues and digital platforms.</p>
-      
-    </div>
 
-    <!-- Project 3 -->
-    <div class="project" data-project-id="3">
-      <div class="project-badge">Design / Video / Stream </div>
-		<img src="images/178799204_3729780010482660_6832248583617810706_n.jpg" alt="NC21">
-      <h4>Nook & Cranny Music Fest</h4>
-      <p>Live Music Festival</p>
-      
-    </div>
-
-    <!-- Project 4 -->
-    <div class="project" data-project-id="4">
-		<div class="project-badge">Design / Video / Stream</div>
-      <img src="images/wmfl.jpg" alt="Lockdown Livestream Event">
-      <h4>Waitati Music Festival</h4>
-      <p>Community Event</p>
-      
-    </div>
-
-    <!-- Project 5 -->
-    <div class="project" data-project-id="5">
- <div class="project-badge">Design / Video / Stage </div>
-		<img src="images/arena_cover.jpg" alt="Event Design & Planning">
-      <h4>Arena Project</h4>
-      <p>Music & Performance</p>
-      
-    </div>
-
-    <!-- Project 6 -->
-    
-	  <div class="project" data-project-id="6">
-    <div class="project-badge">Recording / Design / Video </div>
-		  <img src="images/OllieCrooks_cover2.png" alt="Studio Album Production">
-      <h4>Ollie Crooks - Take You There</h4>
-      <p>Music Video</p>
-      
-    </div>
-
-    <!-- Project 7 -->
-    <div class="project" data-project-id="7">
-    <div class="project-badge">Motion Graphics / Video Production / Project Direction </div>
-		<img src="images/fonterra.jpg" alt="100 Years of lactose">
-      <h4>Fonterra - Infographic Video</h4>
-      <p>Corporate Communication</p>
-      
-    </div>
-
- 
-    <!-- Project 8 -->
-    <div class="project" data-project-id="8">
-      <img src="https://via.placeholder.com/300x200" alt="@fromtheplace">
-      <h4>from the place - Youtube Channel</h4>
-      <p>Sample description for project eight.</p>
-    </div>
-
-    <!-- Project 9 -->
-    <div class="project" data-project-id="9">
-      <img src="https://via.placeholder.com/300x200" alt="Logos & Design">
-      <h4>Logo & design examples</h4>
-      <p>Sample description for project nine.</p>
-    </div>
-
-	  
-    <!-- Project 10 -->
-    <div class="project" data-project-id="9">
-      <img src="https://via.placeholder.com/300x200" alt="Alt Comedy Show">
-      <h4>Newsyland</h4>
-      <p>Sample description for project nine.</p>
-    </div>
-
-    <!-- Project 11 -->
-    <div class="project" data-project-id="9">
-      <img src="https://via.placeholder.com/300x200" alt="Streaming concept">
-      <h4>Space Concert</h4>
-      <p>Sample description for project nine.</p>
-    </div>
-	  
-    <!-- Project 12 -->
-    <div class="project" data-project-id="9">
-      <img src="https://via.placeholder.com/300x200" alt="Magazine Design">
-      <h4>Te Karaka - Te Runanga O Ngai Tahu</h4>
-      <p>Sample description for project nine.</p>
-    </div>
-	  
-  </div>
 </section>
    
 
@@ -332,11 +210,46 @@ function handleUrlHash() {
 
             <section id="contact" class="content-section">
                 <div class="contact-content">
+
+  <div class="skills-section">
+                        <div class="skills-grid">
+                             <div class="skill-category">
+                                <h3>Design</h3>
+                                <ul class="skill-list">
+                                    <li>Logo / Graphic / Poster Design</li>
+                                    <li>Frontend Design</li>
+                                    <li>Offset / Digital / Screen Print Production</li>
+                                </ul>
+                            </div>
+
+     		<div class="skill-category">
+                                <h3>Video</h3>
+                                <ul class="skill-list">
+                                    <li>Podcast Production</li>
+									<li>Multicam Live Video</li>
+                                    <li>Video & Motion Graphic production</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Production </h3>
+                                <ul class="skill-list">
+                                    <li>Event videography</li>
+                                    <li>Video editing & post production</li>
+                                    <li>Live Audio Production</li>
+                                </ul>
+                            </div>               </div>
+                      
                <div class="contact-info">
 					<h2 class="section-title">Contact</h2>
                     <p>Feel free to reach out via <a href="mailto:email@example.com">email@example.com</a>.</p>
                 </div>                
 				</div>
+
+
+                    
+                        </div>
+                    </div>
+                </div>	
             </section>
         </main>
 
@@ -377,26 +290,11 @@ function handleUrlHash() {
 </div>
 
 </div>
- <script src="js/modal.js"></script>
+<script src="js/projects-data.js"></script>
+<script src="js/render-projects.js"></script>
+<script src="js/modal.js"></script>
 <script src="js/main.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
