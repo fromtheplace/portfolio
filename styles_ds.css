@@ -601,10 +601,6 @@ width: 380px;
             margin-top: 2rem;
         }
         
-        .skill-category * {
-			font-size:0.8rem;
-						 }
-
 			.skill-category {
             background: rgba(255, 255, 255, 0.25);
             padding: 1rem 1.5rem;
