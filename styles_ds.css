@@ -315,9 +315,7 @@ width: 107vw;
 
 
 .modal-close {
-  position: absolute;
-      top: 0.5rem;
-    right: -1.5rem;
+
  
   border: none;
   font-size: 2rem;
@@ -332,8 +330,8 @@ width: 107vw;
 .modal-prev,
 .modal-next {
 
-  top: 50%;
-  transform: translateY(-50%) translate(-10px, 11px);
+  
+  
   background: rgba(0, 0, 0, 0.4);
   color: white;
   border: none;
@@ -343,8 +341,7 @@ width: 107vw;
   z-index: 1;
   border-radius: 50%;
   transition: background 0.2s;
-  height:40px;
- width:40px;
+
 }
 
 .modal-prev:hover,
@@ -363,7 +360,8 @@ width: 107vw;
 
 
 .modal-nav {
-	display: flex;
+	grid-template-columns: repeat(auto-fit, minmax(29%, 1fr));
+	display: grid;
     float: right;
 }
 .modal-next {margin:0 10px ; }
@@ -952,8 +950,7 @@ margin-bottom: 6rem;
 }
 
 .modal-close {
-  position: absolute;
-  top: 1rem;
+  
 right: -2rem;
   color: var(--gray-400);
   background: none;
@@ -975,7 +972,7 @@ right: -2rem;
 
 .modal-nav {position:relative;
 float:right;
-right: 40px;
+right: 4REM;
 }
 
 }
@@ -987,8 +984,7 @@ right: 40px;
 
 .modal-prev, .modal-next, 
 .modal-close {
-  top: 0%;
-  transform: translateY(-50%);
+  vertical-align:top;
   background: rgba(0, 0, 0, 0.4);
   color: white;
   border: 1px solid #d4d4d4;
@@ -996,7 +992,7 @@ right: 40px;
   border-radius: 50%;
   height: 40px;
   width: 40px;
-  position: absolute;
+  position: relative;
   z-index: 1001;
   transition: background 0.2s;
 
@@ -1016,11 +1012,11 @@ background: #ff6b35;}
     }
 
 .modal-prev {
-  right: 50px;
+  right: 2REM;
 }
 
 .modal-next {
-  right: 0px;
+  right: 1REM;
 }
 .modal-images img {
 	
@@ -1086,7 +1082,7 @@ padding: 0;   background: none;
   border-bottom: 1px solid var(--gray-700);
   margin-right: 1rem;
 }
-.modal-title {
+#modal-title {
 	max-width:70%;
 }
 /* EMBED CONTAINER */
@@ -1096,7 +1092,7 @@ padding: 0;   background: none;
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  margin-bottom: 1.5rem;
+  margin: 3rem auto 1.5rem;
 }
 
 .embed-container iframe {
@@ -1222,6 +1218,9 @@ gap:0.8em;
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+  #modal-title {
+	max-width:60%;
+}
   .skills-grid {
         gap: 0.6rem;
 }
