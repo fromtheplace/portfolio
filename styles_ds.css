@@ -281,7 +281,7 @@ width: 100%;
   position: relative;
   z-index: 2;
   color: var(--primary-white);
-width: 107vw;
+width: AUTO;
   height: 100%;
   display: flex;
   align-items: center;
@@ -1136,8 +1136,9 @@ gap:0.8em;
 
 @media (max-width: 1280px) {
   .hero-video {
-            WIDTH: 840PX;
+            WIDTH: 1280PX;
         TOP: 0;
+		        LEFT: 5%;
   }
   
   .video-wrapper {
@@ -1216,6 +1217,13 @@ gap:0.8em;
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+	
+	  .hero-video {
+               WIDTH: 100%;
+        TOP: 0;
+		        LEFT: -5%;
+  }
+  
 .modal-nav {	
     right: 3REM;
 TRANSFORM: SCALE(0.7);
