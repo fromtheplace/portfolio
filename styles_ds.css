@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-white);
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin: 0.5REM 0.5rem 1REM;
 }
 
 p {
@@ -1216,6 +1216,10 @@ gap:0.8em;
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+.modal-nav {	
+    right: 3REM;
+TRANSFORM: SCALE(0.7);
+}
   #modal-title {
 	max-width:60%;
 }
@@ -1322,7 +1326,7 @@ gap:0.8em;
   }
   
   .project-group {
-    grid-template-columns: repeat(auto-fit, minmax(29%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
     gap: 0.5rem;
   }
   
