@@ -409,6 +409,7 @@ width: AUTO;
 
 .project p {
   color: var(--gray-400);
+  margin: 0.5REM 0.5rem 1REM;
 }
 
 .placeholder-img {
@@ -1219,9 +1220,9 @@ gap:0.8em;
 @media (max-width: 768px) {
 	
 	  .hero-video {
-               WIDTH: 100%;
+        WIDTH: 250%;
         TOP: 0;
-		        LEFT: -5%;
+        LEFT: -65%;
   }
   
 .modal-nav {	
