@@ -95,24 +95,32 @@ const projectData = {
         {
           "type": "youtube",
           "id": "bs1pQGatwVw",
-          "title": "View stream Pt.1",
+          "title": "Library stream Pt.1",
           "startTime": 9178
         },
         {
           "type": "youtube",
           "id": "ZjQX8IGXmkk",
-          "title": "View stream Pt.2",
+          "title": "Library stream Pt.2",
           "startTime": 3344
         },
         {
           "type": "twitch",
           "title": "Lockdown Stream Pt.1",
-          "videoId": "616649181"
+          "videoId": "616649181",
+          "thumbnail": "images/nctwitch1.jpg"
         },
         {
           "type": "twitch",
           "title": "Lockdown Stream Pt.2",
-          "videoId": "616649388"
+          "videoId": "616649388",
+          "thumbnail": "images/NCtwitch2.jpg"
+        },
+        {
+          "type": "url",
+          "url": "https://www.odt.co.nz/news/dunedin/nook-and-cranny-act-%E2%80%98so-different%E2%80%99",
+          "title": "Press Article",
+          "localImage": "images/ncodt.jpg"
         }
       ],
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Multicam Live Video Production</li>\n        <li>Live Camera Projection</li>\n      </ul>\n    </div>",
@@ -145,17 +153,14 @@ const projectData = {
         {
           "type": "url",
           "url": "https://www.odt.co.nz/the-star/music-festival-organisers-taking-cautious-approach",
-          "title": "Press Article #1"
+          "title": "WMF Press",
+          "localImage": "images/wmfodt.jpg"
         },
         {
           "type": "twitch",
           "title": "Livestream",
-          "videoId": "596395581"
-        },
-        {
-          "type": "url",
-          "url": "https://www.facebook.com/events/3369191529775528/",
-          "title": "Facebook Event"
+          "videoId": "596164984",
+          "thumbnail": "images/wmfl.jpg"
         }
       ],
       "description": "Initially Poster/campaign design work lead to collaborating to create and impromptu online music fest.\n\nDuring the pandemic, livestreaming grew popular. Waitati Music Festival was the first local event streamed, aggregating all the artists perfomances into a single stream. From the place managed all \nfacets of promotion and admin, through to producing live mastered audio and on screen display within a seemless broadcast - saving the event's continutiy and providng a production that stood out through the lockdown.",
@@ -265,12 +270,6 @@ const projectData = {
     "7",
     "3",
     "2",
-    "12",
-    "5",
-    "8",
-    "9",
-    "10",
-    "11",
-    "13"
+    "12"
   ]
 };
