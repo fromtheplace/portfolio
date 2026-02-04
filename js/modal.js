@@ -55,7 +55,10 @@ videos.forEach(video => {
 const projects = projectData.projects || projectData;
 const data = projects[projectId];
 if (!data) return;
+  const modalEl = document.getElementById('project-modal');
+  const modalContent = modalEl.querySelector('.modal-content');
 
+modalEl.scrollTop = 0; modalContent.scrollTop = 0; requestAnimationFrame(() => { modalEl.scrollTop = 0; modalContent.scrollTop = 0; });
 
   currentProjectId = String(projectId);
 
