@@ -288,7 +288,8 @@ if (Array.isArray(data.chips)) {
       chip.href = `https://www.youtube.com/watch?v=${item.id}&t=${startTime}s`;
 
       const thumb = document.createElement('img');
-      thumb.src = `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`;
+      // Use custom thumbnail if provided, otherwise use YouTube's auto-generated thumbnail
+      thumb.src = item.thumbnail || `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`;
       thumb.alt = item.title;
 
       const label = document.createElement('span');
@@ -305,7 +306,8 @@ if (Array.isArray(data.chips)) {
       chip.href = `https://www.dailymotion.com/video/${item.id}`;
 
       const thumb = document.createElement('img');
-      thumb.src = `https://www.dailymotion.com/thumbnail/video/${item.id}`;
+      // Use custom thumbnail if provided, otherwise use Dailymotion's auto-generated thumbnail
+      thumb.src = item.thumbnail || `https://www.dailymotion.com/thumbnail/video/${item.id}`;
       thumb.alt = item.title;
 
       const label = document.createElement('span');
@@ -378,7 +380,11 @@ if (Array.isArray(data.chips)) {
       chip.className = 'media-chip twitch-chip';
       
       if (item.videoId) {
+        // Add timestamp parameter if provided (format: ?t=1h2m3s or ?t=123s)
         chip.href = `https://www.twitch.tv/videos/${item.videoId}`;
+        if (item.timestamp) {
+          chip.href += `?t=${item.timestamp}`;
+        }
       } else if (item.channel) {
         chip.href = `https://www.twitch.tv/${item.channel}`;
       }
