@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From the Place - Studio Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles_ds.css">
+</head>
+<body>
+    <!-- Mobile Toggle Button -->
+    <button class="mobile-toggle" onclick="toggleSidebar()">≡</button>
+    
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo-S.png" height="120" alt="From the Place">
+                <p>Studio Portfolio</p>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-section">
+                    <a class="nav-item" onclick="showSection('projects')">Projects</a>
+                    <a class="nav-item" onclick="showSection('contact')">Contact</a>
+                </div>
+            </nav>
+        </aside>
+        
+        <!-- Hero Video Section -->
+        <section class="hero-video">
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/Ak7f9zN5irU?autoplay=1&mute=1&controls=0&loop=1&playlist=Ak7f9zN5irU"
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Projects Section -->
+            <section id="projects" class="content-section active">
+                <div class="about-content">
+                    <h2 id="ftp" class="section-title logotitle">
+                        <span style="font-size: 80%;">from the</span><br>
+                        <span style="font-size: 130%;">place</span>
+                    </h2>
+
+                   <p class="about-intro" style="margin-bottom:10rem;">Creation + Capture x Production
+						</p> 
+						<span style="font-size:smallest; color:#a3a3a3; font-style:italic;">
+                        visual narratives and multimedia experiences.
+                    </span>
+                    
+                    
+                </div>
+                
+                
+                <div id="projects-container" class="project-group"></div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 class="section-title">Contact</h2>
+                        <p>Feel free to reach out via <a href="mailto:blamboxcity@gmail.com">blamboxcity@gmail.com</a>.</p>
+						
+                    </div>
+                </div>
+				<div class="skills-section">
+                        <div class="skills-grid">
+							<div class="skill-category">
+                                <h3>Design</h3>
+                                <ul class="skill-list">
+                                    <li>Graphic / Poster Design</li>
+                                    <li>Offset / Digital / Screen Print Production</li>
+                                </ul>
+                            </div>
+                       
+							<div class="skill-category">
+                                <h3>Video</h3>
+                                <ul class="skill-list">
+                                    <li>Podcast Production</li>
+                                    <li>Multicam Live Video</li>
+                                    <li>Video & Motion Graphic production</li>
+                                </ul>
+                            </div>
+							<div class="skill-category">
+                                <h3>Production </h3>
+                                <ul class="skill-list">
+                                    <li>Event videography</li>
+                                    <li>Video editing & post production</li>
+                                    <li>Live Audio Production</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+					<h5 style="max-width:60%;margin:4rem auto;">This portfolio is a data-driven single page built with vanilla JavaScript, 
+						featuring dynamic rendering, modular UI components, and a lightweight CMS-style architecture without frameworks. 
+						To streamline content updates, A Python tool and GUI manages the project JSON data.</h5>
+            </section>
+        </main>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <div class="modal-nav">
+                <button class="modal-prev" aria-label="Previous Project">&#8592;</button>
+                <button class="modal-next" aria-label="Next Project">&#8594;</button>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+
+            <h2 id="modal-title">Project Title</h2>
+
+            <div id="modalVideoContainer" class="embed-container"></div>
+            
+            <p id="modal-description">Project description here...</p>
+            
+            <div id="modal-body"></div>
+            
+            <div class="chips">
+                <h2>Links & Media</h2>
+                <div id="yt-chip-container" class="chip-container"></div>
+            </div>
+            
+            <div id="modalImageContainer" class="modal-images"></div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div id="image-lightbox-overlay" style="display: none;">
+        <span id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/utilities.js"></script>
+    <script src="projects-data.js"></script>
+    <script src="js/render-projects.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

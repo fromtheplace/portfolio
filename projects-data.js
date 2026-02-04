@@ -7,23 +7,21 @@ const projectData = {
       "chips": [
         {
           "type": "youtube",
-          "id": "J06W1MAzugI",
-          "title": "Shorts/Reels"
+          "id": "PTzNHJmz63Q",
+          "title": "Reel #1"
         },
         {
           "type": "url",
           "url": "https://www.odt.co.nz/news/dunedin/connecting-through-music",
-          "title": "Press Article #1"
+          "title": "Press Article #1",
+          "localImage": "images/ohhodt2.jpg"
         },
         {
           "type": "url",
           "url": "https://www.odt.co.nz/news/arts-festival-dunedin/night-%E2%80%98boogieing%E2%80%99-hip-hop-event-hit",
-          "title": "Press Article #2"
+          "title": "Press Article #2",
+          "localImage": "images/ohhodt.jpg"
         }
-      ],
-      "images": [
-        "images/Nook_banner.jpg",
-        "images/nook_poster.jpg"
       ],
       "description": "Multicam live video production, live camera projection, live audio mastering, after film production, Long and short-form video publishing.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Multicam live video production</li>\n        <li>Live on-stage camera projection</li>\n        <li>Live Audio Mastering</li>\n        <li>After-Film Production</li>\n        <li>Long-Form & Short-Form Video Publishing</li>\n      </ul>\n    </div>",
@@ -94,20 +92,21 @@ const projectData = {
       "chips": [
         {
           "type": "youtube",
-          "id": "bs1pQGatwVw",
+          "id": "ZjQX8IGXmkk",
           "title": "Library stream Pt.1",
-          "startTime": 9178
+          "startTime": 3344
         },
         {
           "type": "youtube",
-          "id": "ZjQX8IGXmkk",
+          "id": "bs1pQGatwVw",
           "title": "Library stream Pt.2",
-          "startTime": 3344
+          "startTime": 9178
         },
         {
           "type": "twitch",
           "title": "Lockdown Stream Pt.1",
           "videoId": "616649181",
+          "timestamp": "8h53m35s",
           "thumbnail": "images/NCtwitch1.jpg"
         },
         {
@@ -143,12 +142,14 @@ const projectData = {
         {
           "type": "youtube",
           "id": "3OS_XOca06o",
-          "title": "Undertow set"
+          "title": "Undertow set",
+          "thumbnail": "images/undertow5.jpg"
         },
         {
           "type": "youtube",
           "id": "f8fhAe6YrTw",
-          "title": "Ferdishenko set"
+          "title": "Ferdishenko set",
+          "thumbnail": "images/ferdishenko.jpg"
         },
         {
           "type": "url",
@@ -160,7 +161,7 @@ const projectData = {
           "type": "twitch",
           "title": "Livestream",
           "videoId": "596164984",
-          "thumbnail": "images/wmfl.jpg"
+          "thumbnail": "images/wmfl1.jpg"
         }
       ],
       "description": "Initially Poster/campaign design work lead to collaborating to create and impromptu online music fest.\n\nDuring the pandemic, livestreaming grew popular. Waitati Music Festival was the first local event streamed, aggregating all the artists perfomances into a single stream. From the place managed all \nfacets of promotion and admin, through to producing live mastered audio and on screen display within a seemless broadcast - saving the event's continutiy and providng a production that stood out through the lockdown.",
@@ -196,8 +197,8 @@ const projectData = {
       "chips": [
         {
           "type": "iframe",
-          "title": "Player",
-          "iframe": "<iframe style=\"border: 0; width: 350px; height: 470px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=439202460/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/\" seamless><a href=\"https://olliecrooks.bandcamp.com/album/take-you-there\">Take you there by Ollie Crooks</a></iframe>"
+          "title": "",
+          "iframe": "<iframe style=\"border: 0; width: auto; height: auto;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=439202460/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=1224234983/transparent=true/\" seamless><a href=\"https://olliecrooks.bandcamp.com/album/take-you-there\">Take you there by Ollie Crooks</a></iframe>"
         },
         {
           "type": "youtube",
@@ -253,7 +254,8 @@ const projectData = {
       "html_h4": "Te Karaka - Te Runanga O Ngai Tahu",
       "html_description": "Sample description for project twelve.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>      <ul>\n        <li>Layout & advertising design</li>\n      </ul>\n    </div>",
-      "title": "Te Karaka Magazine"
+      "title": "Te Karaka Magazine",
+      "html_badge": "Print Design"
     },
     "13": {
       "html_badge": "Design / Video / Stage",
@@ -270,7 +272,12 @@ const projectData = {
     "7",
     "3",
     "2",
-    "12"
+    "12",
+    "5",
+    "8",
+    "9",
+    "10",
+    "11",
+    "13"
   ]
-
 };
