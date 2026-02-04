@@ -108,7 +108,7 @@ const projectData = {
           "type": "twitch",
           "title": "Lockdown Stream Pt.1",
           "videoId": "616649181",
-          "thumbnail": "images/nctwitch1.jpg"
+          "thumbnail": "images/NCtwitch1.jpg"
         },
         {
           "type": "twitch",
@@ -272,4 +272,5 @@ const projectData = {
     "2",
     "12"
   ]
+
 };
