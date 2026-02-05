@@ -1254,7 +1254,7 @@ TRANSFORM: SCALE(0.7);
 		padding:0.1rem;
     }
   p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1.4;
   }
   
@@ -1309,7 +1309,7 @@ TRANSFORM: SCALE(0.7);
   
   #modal-description {
     column-count: 1;
-	        PADDING: 0 4REM;
+	        PADDING: 0 1REM;
   }
   
   .modal-content {
@@ -1406,5 +1406,4 @@ TRANSFORM: SCALE(0.7);
     min-height: 260px;
   }
 }
-
 
