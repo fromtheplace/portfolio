@@ -7,6 +7,34 @@
       const modalNext = document.querySelector('.modal-next');
       const modalClose = document.querySelector('.modal-close');
       const imageContainer = document.getElementById('modalImageContainer');
+
+// ===========================================
+// BACK BUTTON HANDLER FOR MODAL
+// ===========================================
+let modalHistoryPushed = false;
+
+// Listen for back button
+window.addEventListener('popstate', function(event) {
+  if (modal && modal.style.display === 'flex') {
+    // Modal is open, close it instead of navigating back
+    event.preventDefault();
+    closeModal();
+  }
+});
+
+// Override body overflow when modal opens/closes
+function lockBodyScroll() {
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
+}
+
+function unlockBodyScroll() {
+  document.body.style.overflow = '';
+  document.body.style.position = '';
+  document.body.style.width = '';
+}
+
 // === Lightbox Setup ===
 const lightboxOverlay = document.getElementById('image-lightbox-overlay');
 const lightboxImg = document.getElementById('lightbox-img');
@@ -243,41 +271,15 @@ if (data.youtube) {
     iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
     iframe.allowFullscreen = true;
     videoContainer.appendChild(iframe);
-} else if (data.customIframe) {
-    // Custom iframe with full control
-    const iframe = document.createElement('iframe');
-    
-    // Check if customIframe is a string (raw HTML) or an object
-    if (typeof data.customIframe === 'string') {
-        // Parse the HTML string to extract attributes
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = data.customIframe.trim();
-        const parsedIframe = tempDiv.querySelector('iframe');
-        
-        if (parsedIframe) {
-            // Copy all attributes from the parsed iframe
-            Array.from(parsedIframe.attributes).forEach(attr => {
-                iframe.setAttribute(attr.name, attr.value);
-            });
-        }
-    } else {
-        // Object format (original behavior)
-        iframe.src = data.customIframe.src;
-        iframe.frameBorder = data.customIframe.frameBorder || '0';
-        if (data.customIframe.allow) iframe.allow = data.customIframe.allow;
-        if (data.customIframe.allowFullscreen !== false) iframe.allowFullscreen = true;
-        if (data.customIframe.width) iframe.width = data.customIframe.width;
-        if (data.customIframe.height) iframe.height = data.customIframe.height;
-        if (data.customIframe.style) iframe.setAttribute('style', data.customIframe.style);
-    }
-    
-    videoContainer.appendChild(iframe);
 }
- const chipContainer = document.getElementById('yt-chip-container');
+
+// Chips
+const chipContainer = document.getElementById('yt-chip-container');
 chipContainer.innerHTML = '';
 
+// Create a container for URL chips
 const urlWrapper = document.createElement('div');
-urlWrapper.className = 'url-chip-column';
+urlWrapper.className = 'url-chip-wrapper';
 
 if (Array.isArray(data.chips)) {
   data.chips.forEach((item) => {
@@ -286,12 +288,16 @@ if (Array.isArray(data.chips)) {
 
     // YouTube chip
     if (item.type === 'youtube') {
-      chip.className = 'yt-chip';
-      const startTime = item.startTime || 0;
-      chip.href = `https://www.youtube.com/watch?v=${item.id}&t=${startTime}s`;
+      chip.className = 'media-chip yt-chip';
+      
+      // Build YouTube URL with optional timestamp
+      let youtubeUrl = `https://www.youtube.com/watch?v=${item.id}`;
+      if (item.startTime) {
+        youtubeUrl += `&t=${item.startTime}s`;
+      }
+      chip.href = youtubeUrl;
 
       const thumb = document.createElement('img');
-      // Use custom thumbnail if provided, otherwise use YouTube's auto-generated thumbnail
       thumb.src = item.thumbnail || `https://img.youtube.com/vi/${item.id}/hqdefault.jpg`;
       thumb.alt = item.title;
 
@@ -477,9 +483,16 @@ if (data.playlist) {
   chipContainer.appendChild(playlistChip);
 }
 
+  // Push history state when opening modal
+  if (!modalHistoryPushed) {
+    history.pushState({ modalOpen: true }, '', '');
+    modalHistoryPushed = true;
+  }
+
   // Show modal
   modal.setAttribute('aria-hidden', 'false');
   modal.style.display = 'flex';
+  lockBodyScroll();
 
   // Navigation arrows - use ordered IDs
   const ids = getOrderedProjectIds();
@@ -495,10 +508,20 @@ function closeModal() {
 
   modal.setAttribute('aria-hidden', 'true');
   modal.style.display = 'none';
+  unlockBodyScroll();
   currentProjectId = null;
 
   // 🛑 Stop YouTube playback by removing the iframe
   videoContainer.innerHTML = '';
+
+  // If we pushed a history state, go back to remove it
+  if (modalHistoryPushed) {
+    modalHistoryPushed = false;
+    // Only go back if the current state is the modal state
+    if (history.state && history.state.modalOpen) {
+      history.back();
+    }
+  }
 }
 
       function showNextProject() {
