@@ -483,6 +483,13 @@ if (data.playlist) {
   chipContainer.appendChild(playlistChip);
 }
 
+// Hide "Links & Media" section if there are no chips or playlist
+const chipsSection = document.querySelector('.chips');
+const hasChips = (Array.isArray(data.chips) && data.chips.length > 0) || data.playlist;
+if (chipsSection) {
+  chipsSection.style.display = hasChips ? 'block' : 'none';
+}
+
   // Push history state when opening modal
   if (!modalHistoryPushed) {
     history.pushState({ modalOpen: true }, '', '');
