@@ -1236,7 +1236,7 @@ gap:0.8em;
 	  .hero-video {
         WIDTH: 250%;
         TOP: 0;
-        LEFT: -65%;
+        LEFT: -85%;
   }
   
 .modal-nav {	
@@ -1406,4 +1406,5 @@ TRANSFORM: SCALE(0.7);
     min-height: 260px;
   }
 }
+
 
