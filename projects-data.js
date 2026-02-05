@@ -37,35 +37,43 @@ const projectData = {
       "chips": [
         {
           "type": "youtube",
+          "id": "-ZsnEJllT5Y",
+          "title": "Ryechi - MFP1"
+        },
+        {
+          "type": "youtube",
+          "id": "y4jkCeM_hDo",
+          "title": "Rezzy Crooks - MFP1"
+        },
+        {
+          "type": "youtube",
           "id": "XvE0GewwNlI",
-          "title": "St Pauls Cathedral show",
+          "title": "MFP2 - St Pauls Cathedral stream",
           "startTime": 18806
         },
         {
           "type": "youtube",
           "id": "HWOwgh6AI5k",
-          "title": "Starters Bar show",
+          "title": "MFP2 - Starters Bar stream",
           "startTime": 6899
         },
         {
           "type": "url",
           "url": "https://www.odt.co.nz/entertainment/music/powerful-brew-something-new",
-          "title": "ODT Article #1"
+          "title": "ODT Article #1",
+          "localImage": "images/mfpodt1.jpg"
         },
         {
           "type": "url",
           "url": "https://www.critic.co.nz/news/article/9500/the-spat-behind-music-for-the-peoples-relocation-f",
-          "title": "Critic/Te Ārohi Article"
+          "title": "Critic/Te Ārohi Article",
+          "localImage": "images/mfpcritic.jpg"
         },
         {
           "type": "url",
           "url": "https://www.odt.co.nz/entertainment/music/people-get-ready",
-          "title": "ODT Article #2"
-        },
-        {
-          "type": "url",
-          "url": "https://www.facebook.com/events/197513774778177",
-          "title": "MFP FB Event"
+          "title": "ODT Article #2",
+          "localImage": "images/mfpodt2.jpg"
         },
         {
           "type": "url",
@@ -106,8 +114,8 @@ const projectData = {
           "type": "twitch",
           "title": "Lockdown Stream Pt.1",
           "videoId": "616649181",
-          "timestamp": "8h53m35s",
-          "thumbnail": "images/NCtwitch1.jpg"
+          "thumbnail": "images/NCtwitch1.jpg",
+          "timestamp": "8h53m35s"
         },
         {
           "type": "twitch",
@@ -251,11 +259,16 @@ const projectData = {
     },
     "12": {
       "html_image": "images/tk2.jpg",
-      "html_h4": "Te Karaka - Te Runanga O Ngai Tahu",
-      "html_description": "Sample description for project twelve.",
+      "html_h4": "Te Runanga O Ngai Tahu - TK Magazine",
+      "html_description": "Magazine layout and advertising design.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>      <ul>\n        <li>Layout & advertising design</li>\n      </ul>\n    </div>",
       "title": "Te Karaka Magazine",
-      "html_badge": "Print Design"
+      "html_badge": "Print Design",
+      "youtube": "_D0lrNo1vNo",
+      "images": [
+        "images/TKspread1.jpg",
+        "images/TKspread2.jpg"
+      ]
     },
     "13": {
       "html_badge": "Design / Video / Stage",
@@ -263,6 +276,17 @@ const projectData = {
       "html_h4": "JAH SUN: FEST",
       "title": "JAH SUN: FEST",
       "youtube": "iYsvXeUsH0E"
+    },
+    "14": {
+      "html_h4": "LOBOFEST",
+      "title": "LOBOFEST",
+      "chips": [
+        {
+          "type": "url",
+          "url": "https://www.odt.co.nz/entertainment/music/winter-fest-winner",
+          "title": "localImage:images/lobo.jpg"
+        }
+      ]
     }
   },
   "project_order": [
@@ -272,7 +296,13 @@ const projectData = {
     "7",
     "3",
     "2",
-    "12"
+    "12",
+    "5",
+    "8",
+    "9",
+    "10",
+    "11",
+    "13",
+    "14"
   ]
-
 };
