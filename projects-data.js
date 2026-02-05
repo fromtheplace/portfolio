@@ -6,11 +6,6 @@ const projectData = {
       "playlist": "PL2HwIIvWJIPHkofbvzfQy7apKM2vYth5k",
       "chips": [
         {
-          "type": "youtube",
-          "id": "PTzNHJmz63Q",
-          "title": "Reel #1"
-        },
-        {
           "type": "url",
           "url": "https://www.odt.co.nz/news/dunedin/connecting-through-music",
           "title": "Press Article #1",
@@ -21,6 +16,11 @@ const projectData = {
           "url": "https://www.odt.co.nz/news/arts-festival-dunedin/night-%E2%80%98boogieing%E2%80%99-hip-hop-event-hit",
           "title": "Press Article #2",
           "localImage": "images/ohhodt.jpg"
+        },
+        {
+          "type": "youtube",
+          "id": "PTzNHJmz63Q",
+          "title": "Reel #1"
         }
       ],
       "description": "Multicam live video production, live camera projection, live audio mastering, after film production, Long and short-form video publishing.",
@@ -266,9 +266,11 @@ const projectData = {
       "html_badge": "Print Design",
       "youtube": "_D0lrNo1vNo",
       "images": [
+        "images/tkcovers.jpg",
         "images/TKspread1.jpg",
         "images/TKspread2.jpg"
-      ]
+      ],
+      "description": "Te Karaka is the flagship Ngāi Tahu quarterly publication covering the best of current  Māori, indigenous and NZ culture.\nDesign work involved layout contributions in issues #36 - 54. This included a regular recurring spread \"Ahakoa he iti, he pounamu\" - a well-known Māori\nsaying meaning \"Although it is small, it is a treasure\""
     },
     "13": {
       "html_badge": "Design / Video / Stage",
@@ -296,7 +298,13 @@ const projectData = {
     "7",
     "3",
     "2",
-    "12"
+    "12",
+    "5",
+    "8",
+    "9",
+    "10",
+    "11",
+    "13",
+    "14"
   ]
-
 };

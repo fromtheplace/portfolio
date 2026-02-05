@@ -241,7 +241,7 @@ width: 100%;
   height: 1040px;
   overflow: hidden;
   z-index:-2;
-  top:-225px;
+  top:0px;
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 75%, transparent 100%);
   mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 75%, transparent 100%);
 
@@ -450,7 +450,7 @@ width: AUTO;
 }
 .chip-container {
      grid-template-columns: repeat(auto-fit, minmax(29%, 1fr));
-    gap: 0.5rem;
+    gap: 2.5rem 0.5rem;
     margin-bottom: 3rem;
     display: grid;
     justify-content: center;
@@ -463,17 +463,17 @@ width: AUTO;
 .yt-chip {
   display: flex;
   flex-direction: column;
-      height: 250px;
+      height: 260px;
   margin: 0 10px 10px 0;
   text-decoration: none;
   color: inherit;
 }
-
+.url-chip-wrapper,
 .url-chip-column{
- display: CONTENTS;
+ display: contents;
   
    order: 999;
-	text-align: center;
+	text-align: center;6
      
 }
 
@@ -934,7 +934,8 @@ color: var(--primary-white);}
   align-items: flex-start;
 }
 #modal-description {
-	column-count: 2;
+	 column-count: 1;
+	        PADDING: 0 4REM;
 }
 
 .modal-content {
@@ -1120,7 +1121,13 @@ padding: 0;   background: none;
 }
 
 /* DESKTOP RESPONSIVE */
-@media (max-width: 1360px) {
+@media (max-width: 1368px) {
+	
+	.yt-chip img {
+  
+  
+	height: 170px;}
+	
 .project-group {
 grid-template-columns: repeat(auto-fit, minmax(29%, 1fr));
 gap:0.8em;
@@ -1133,9 +1140,8 @@ gap:0.8em;
 
 @media (max-width: 1280px) {
   .hero-video {
-            WIDTH: 1280PX;
         TOP: 0;
-		        LEFT: 5%;
+		        
   }
   
   .video-wrapper {
@@ -1216,6 +1222,10 @@ gap:0.8em;
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+	
+	.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));}
 	.chip-container {
     grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
     gap: 0.5rem;
@@ -1266,7 +1276,7 @@ TRANSFORM: SCALE(0.7);
   
   .main-content {
     margin-left: 0;
-    padding: 0 1.5rem 0 0;
+    padding: 0 1rem;
     transition: padding-left 0.3s ease;
   }
   
@@ -1297,6 +1307,7 @@ TRANSFORM: SCALE(0.7);
   
   #modal-description {
     column-count: 1;
+	        PADDING: 0 4REM;
   }
   
   .modal-content {
@@ -1390,7 +1401,7 @@ TRANSFORM: SCALE(0.7);
   }
   
   .iframe-chip-wrapper iframe {
-    min-height: 250px;
+    min-height: 260px;
   }
 }
 
