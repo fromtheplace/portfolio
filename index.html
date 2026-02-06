@@ -108,11 +108,12 @@
     <!-- Project Modal -->
     <div id="project-modal" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="modal-content">
-            <div class="modal-nav">
-                <button class="modal-prev" aria-label="Previous Project">&#8592;</button>
-                <button class="modal-next" aria-label="Next Project">&#8594;</button>
-                <button class="modal-close" aria-label="Close">&times;</button>
-            </div>
+            <div class="modal-header">
+    <div class="modal-project-counter">
+        <span id="modal-current-index">1</span> / <span id="modal-total-count">10</span>
+    </div>
+    <button class="modal-close-x" aria-label="Close">×</button>
+</div>
 
             <h2 id="modal-title">Project Title</h2>
 
@@ -123,11 +124,24 @@
             <div id="modal-body"></div>
             
             <div class="chips">
-                <h2>Links & Media</h2>
+                
                 <div id="yt-chip-container" class="chip-container"></div>
             </div>
             
             <div id="modalImageContainer" class="modal-images"></div>
+			
+			<div class="modal-footer-nav">
+    <button class="modal-prev" aria-label="Previous Project">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+        </svg>
+    </button>
+    <button class="modal-next" aria-label="Next Project">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+        </svg>
+    </button>
+</div>
         </div>
     </div>
 
