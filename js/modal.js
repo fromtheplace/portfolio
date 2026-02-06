@@ -5,12 +5,15 @@
 	   const modalBody = document.getElementById('modal-body');
       const modalPrev = document.querySelector('.modal-prev');
       const modalNext = document.querySelector('.modal-next');
-      const modalClose = document.querySelector('.modal-close');
+      const modalClose = document.querySelector('.modal-close-x') || document.querySelector('.modal-close');
+	const modalCurrentIndex = document.getElementById('modal-current-index');
+	const modalTotalCount = document.getElementById('modal-total-count');
       const imageContainer = document.getElementById('modalImageContainer');
 
 // ===========================================
 // BACK BUTTON HANDLER FOR MODAL
 // ===========================================
+let currentProjectId = null;
 let modalHistoryPushed = false;
 
 // Listen for back button
@@ -502,10 +505,24 @@ if (chipsSection) {
   lockBodyScroll();
 
   // Navigation arrows - use ordered IDs
-  const ids = getOrderedProjectIds();
-  const currentIndex = ids.indexOf(String(currentProjectId));
-  modalPrev.style.display = currentIndex === 0 ? 'none' : 'block';
-  modalNext.style.display = currentIndex === ids.length - 1 ? 'none' : 'block';
+ const ids = getOrderedProjectIds();
+const currentIndex = ids.indexOf(String(currentProjectId));
+
+// Update counter
+if (modalCurrentIndex && modalTotalCount) {
+  modalCurrentIndex.textContent = currentIndex + 1;
+  modalTotalCount.textContent = ids.length;
+}
+
+// Update navigation button states
+if (modalPrev) {
+  modalPrev.style.display = currentIndex === 0 ? 'none' : 'flex';
+  modalPrev.disabled = currentIndex === 0;
+}
+if (modalNext) {
+  modalNext.style.display = currentIndex === ids.length - 1 ? 'none' : 'flex';
+  modalNext.disabled = currentIndex === ids.length - 1;
+}
 }
 
 
@@ -551,9 +568,17 @@ document.addEventListener('click', (e) => {
   if (id) openModal(id);
 });
 
-      modalClose.addEventListener('click', closeModal);
-      modalNext.addEventListener('click', showNextProject);
-      modalPrev.addEventListener('click', showPrevProject);
+if (modalClose) {
+  modalClose.addEventListener('click', closeModal);
+}
+
+if (modalNext) {
+  modalNext.addEventListener('click', showNextProject);
+}
+
+if (modalPrev) {
+  modalPrev.addEventListener('click', showPrevProject);
+}
 
       modal.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
