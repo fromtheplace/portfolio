@@ -1421,9 +1421,11 @@ TRANSFORM: SCALE(0.7);
     column-count: 1;
   }
   
-  #project-modal {
-    padding: 0rem;
-  }
+#project-modal {
+
+    left: -15vw;
+    width: 130vw;
+}
   
   #modal-description {
     column-count: 1;
@@ -1449,6 +1451,8 @@ TRANSFORM: SCALE(0.7);
 
 /* SMALL MOBILE RESPONSIVE */
 @media (max-width: 360px) {
+
+
 
   .main-content {
     padding: 1rem;
