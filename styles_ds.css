@@ -587,7 +587,7 @@ width: AUTO;
 .chip-container {
      grid-template-columns: repeat(auto-fit, minmax(29%, 1fr));
     gap: 2.5rem 0.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -1156,7 +1156,7 @@ background: #ff6b35;}
 
 .modal-images {
 	text-align:left;
-	margin-top: 1.5rem;
+	margin-top: 0rem;
 	    grid-template-columns: repeat(auto-fit, minmax(29%, 1fr));
     display: grid;
 	    gap: 1rem;
