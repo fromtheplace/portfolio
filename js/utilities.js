@@ -25,6 +25,15 @@ function showSection(id) {
             item.classList.add('active');
         }
     });
+    
+    // AUTO-HIDE SIDEBAR ON MOBILE
+    if (window.innerWidth <= 768) {
+        const sidebar = document.querySelector('.sidebar');
+        const main = document.querySelector('.main-content');
+        
+        if (sidebar) sidebar.classList.remove('open');
+        if (main) main.classList.remove('sidebar-open');
+    }
 }
 
 function handleUrlHash() {
