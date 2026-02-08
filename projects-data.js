@@ -262,7 +262,7 @@ const projectData = {
     },
     "12": {
       "html_image": "images/tk2.jpg",
-      "html_h4": "Te Runanga O Ngai Tahu - TK Magazine",
+      "html_h4": "Te Rūnanga o Ngāi Tahu - TK Magazine",
       "html_description": "Magazine layout and advertising design.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>      <ul>\n        <li>Layout & advertising design</li>\n      </ul>\n    </div>",
       "title": "Te Karaka Magazine",
@@ -315,4 +315,5 @@ const projectData = {
     "15"
   ]
 };
+
 
