@@ -294,10 +294,11 @@ const projectData = {
       ]
     },
     "15": {
-      "youtube"7HxENNQql38",
-      "startTime": 10500,
-      "html_badge": "Contact!",
-      "title": "Reach out!"
+      "html_badge": "Contact",
+      "title": "Reach out!",
+      "youtube": "https://www.youtube.com/live/7HxENNQql38",
+      "html_description": "Reach out!",
+      "startTime": 10500
     }
   },
   "project_order": [
@@ -311,6 +312,3 @@ const projectData = {
     "15"
   ]
 };
-
-
-
