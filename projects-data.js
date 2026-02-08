@@ -297,9 +297,12 @@ const projectData = {
       "html_badge": "Contact",
       "title": "Reach out!",
       "youtube": "KqEROpsGV_g",
+      "html_description": "Reach out!",
+      "startTime": 0,
+      "html_h4": "Reach out!",
       "html_image": "images/ro.jpg",
-      "html_description": "Reach out via <a href="mailto:blamboxcity@gmail.com">blamboxcity@gmail.com</a>."
-      }
+      "description": "Reach out via <a href=\"mailto:blamboxcity@gmail.com\">blamboxcity@gmail.com</a>."
+    }
   },
   "project_order": [
     "4",
@@ -312,7 +315,3 @@ const projectData = {
     "15"
   ]
 };
-
-
-
-
