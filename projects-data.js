@@ -296,7 +296,8 @@ const projectData = {
     "15": {
       "html_badge": "Reach out!",
       "title": "Reach out!",
-      "youtube": "https://www.youtube.com/live/7HxENNQql38?si=cu8cx1tM4td41xce"
+      "youtube": https://youtu.be/7HxENNQql38",
+      "startTime": 10500
     }
   },
   "project_order": [
@@ -310,4 +311,5 @@ const projectData = {
     "15"
   ]
 };
+
 
