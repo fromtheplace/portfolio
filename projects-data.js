@@ -102,12 +102,14 @@ const projectData = {
           "type": "youtube",
           "id": "ZjQX8IGXmkk",
           "title": "Library stream Pt.1",
+          "thumbnail": "images/NC211.jpg",
           "startTime": 3344
         },
         {
           "type": "youtube",
           "id": "bs1pQGatwVw",
           "title": "Library stream Pt.2",
+          "thumbnail": "images/NC212.jpg",
           "startTime": 9178
         },
         {
@@ -132,10 +134,10 @@ const projectData = {
       ],
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Multicam Live Video Production</li>\n        <li>Live Camera Projection</li>\n      </ul>\n    </div>",
       "images": [
-        "images/Nook_banner.jpg",
-        "images/bssc.jpg",
+        "images/nook_poster.jpg",
         "images/ncmtv.jpg",
-        "images/nook_poster.jpg"
+        "images/Nook_banner.jpg",
+        "images/bssc.png"
       ],
       "html_badge": "Design / Video / Stream",
       "html_image": "images/178799204_3729780010482660_6832248583617810706_n.jpg",
@@ -271,7 +273,7 @@ const projectData = {
         "images/TKspread1.jpg",
         "images/TKspread2.jpg"
       ],
-      "description": "Te Karaka is the flagship Ngāi Tahu quarterly publication covering the best of current  Māori, indigenous and NZ culture.\nDesign work involved layout contributions in issues #36 - 54. This included a regular recurring spread \"Ahakoa he iti, he pounamu\" - a well-known Māori\nsaying meaning \"Although it is small, it is a treasure\""
+      "description": "Te Karaka is the flagship Ngāi Tahu quarterly publication covering the best of current Māori, indigenous and New Zealand culture.<br/>\nDesign work involved layout contributions in issues #36 - 54. This included a regular recurring spread \"Ahakoa he iti, he pounamu\" - a well-known Māori\nsaying meaning \"Although it is small, it is a treasure\""
     },
     "13": {
       "html_badge": "Design / Video / Stage",
@@ -299,6 +301,13 @@ const projectData = {
     "7",
     "3",
     "2",
-    "12"
+    "12",
+    "5",
+    "8",
+    "9",
+    "10",
+    "11",
+    "13",
+    "14"
   ]
 };
