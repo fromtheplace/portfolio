@@ -297,7 +297,7 @@ const projectData = {
       "html_badge": "Contact",
       "title": "Reach out!",
       "youtube": "KqEROpsGV_g",
-      "html_description": "Reach out!"
+      "html_description": "Reach out via <a href="mailto:blamboxcity@gmail.com">blamboxcity@gmail.com</a>."
       }
   },
   "project_order": [
@@ -311,5 +311,6 @@ const projectData = {
     "15"
   ]
 };
+
 
 
