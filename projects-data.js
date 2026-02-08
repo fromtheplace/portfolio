@@ -88,7 +88,7 @@ const projectData = {
       ],
       "description": "In February 2020, just before lockdowns, New New New hosted its largest and most ambitious line-up to date. Music for People featured 11 genre-spanning acts, from rap to rock and everything in between. The follow-up expanded to 32 acts across two distinct sessions: an afternoon in St Paul's Cathedral and an evening at Starters Bar. <br/>  <strong><em>From the Place</em></strong>  led both the creative and technical direction, developing a cohesive visual identity and a multi-platform production workflow. This included multicam live video streaming for both sessions, real-time on-site camera projection, and live audio mastering for high-fidelity broadcast and archival delivery. All graphic assets—across print, digital, and motion—were designed in-house, along with a custom ecommerce and ticketing platform featuring artist profiles, schedules, and sales integration. The result was a seamless, hybrid production that bridged audiences across spaces and styles, delivering a unified experience in both physical and digital form.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Multicam Live Video Production</li>\n        <li>Live Audio Mastering</li>\n        <li>Graphic Design</li>\n        <li>Ecommerce/Ticketing website</li>\n        <li>Music Compostion/Teaser Video Production</li>\n      </ul>\n    </div>",
-      "html_badge": "Design / Video / Stream / Stage",
+      "html_badge": "Design / Video / Stream",
       "html_image": "images/mfp0.jpg",
       "html_h4": "Music for People",
       "html_description": "Multi-day crowd-sourced music event with coordination across multiple venues and digital platforms."
@@ -102,15 +102,15 @@ const projectData = {
           "type": "youtube",
           "id": "ZjQX8IGXmkk",
           "title": "Library stream Pt.1",
-          "thumbnail": "images/NC211.jpg",
-          "startTime": 3344
+          "startTime": 3344,
+          "thumbnail": "images/NC211.jpg"
         },
         {
           "type": "youtube",
           "id": "bs1pQGatwVw",
           "title": "Library stream Pt.2",
-          "thumbnail": "images/NC212.jpg",
-          "startTime": 9178
+          "startTime": 9178,
+          "thumbnail": "images/NC212.jpg"
         },
         {
           "type": "twitch",
@@ -137,7 +137,7 @@ const projectData = {
         "images/nook_poster.jpg",
         "images/ncmtv.jpg",
         "images/Nook_banner.jpg",
-        "images/bssc.png"
+        "images/BSSC.png"
       ],
       "html_badge": "Design / Video / Stream",
       "html_image": "images/178799204_3729780010482660_6832248583617810706_n.jpg",
@@ -171,11 +171,11 @@ const projectData = {
           "type": "twitch",
           "title": "Livestream",
           "videoId": "596164984",
-          "timestamp": "7h28m51s",
-          "thumbnail": "images/wmfl1.jpg"
+          "thumbnail": "images/wmfl1.jpg",
+          "timestamp": "7h28m51s"
         }
       ],
-      "description": "Initially Poster/campaign design work lead to collaborating to create and impromptu online music fest.\n\nDuring the pandemic, livestreaming grew popular. Waitati Music Festival was the first local event streamed, aggregating all the artists perfomances into a single stream. From the place managed all \nfacets of promotion and admin, through to producing live mastered audio and on screen display within a seemless broadcast - saving the event's continutiy and providng a production that stood out through the lockdown.",
+      "description": "Initially Poster/campaign design work lead to collaborating to create and impromptu online music fest.\n\nDuring the pandemic, livestreaming grew popular. Waitati Music Festival was the first local event streamed, aggregating all the artists perfomances into a single stream. <strong><em>From the Place</em></strong> managed all \nfacets of promotion and admin, through to producing live mastered audio and on screen display within a seemless broadcast - saving the event's continutiy and providng a production that stood out through the lockdown.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Campaign Design</li>\n        <li>Livestream production</li>\n\t <li>On Screen graphics</li>\n      </ul>\n    </div>",
       "html_badge": "Design / Video / Stream",
       "html_image": "images/wmfl.jpg",
@@ -221,7 +221,7 @@ const projectData = {
     "7": {
       "youtube": "DPQRV7qTxT0",
       "title": "Fonterra - Infographic Video Production",
-      "description": "For this project was created to commemorate 100 years of lactose production in New Zealand.\n\nWork included Storyboard planning, 2D graphic creation, 2D Animation, Soundtrack composition and production.",
+      "description": "This project was created to commemorate 100 years of lactose production in New Zealand.\nWork included Storyboard planning, 2D graphic creation, 2D Animation, Soundtrack composition and production.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Animation design & production</li>\n        <li>Music Composition</li>\n        <li>Voice over production</li>\n      </ul>\n    </div>",
       "html_badge": "Video / Audio / Design",
       "html_image": "images/fonterra.jpg",
@@ -273,7 +273,7 @@ const projectData = {
         "images/TKspread1.jpg",
         "images/TKspread2.jpg"
       ],
-      "description": "Te Karaka is the flagship Ngāi Tahu quarterly publication covering the best of current Māori, indigenous and New Zealand culture.<br/>\nDesign work involved layout contributions in issues #36 - 54. This included a regular recurring spread \"Ahakoa he iti, he pounamu\" - a well-known Māori\nsaying meaning \"Although it is small, it is a treasure\""
+      "description": "Te Karaka is the flagship Ngāi Tahu quarterly publication covering the best of current Māori, indigenous and New Zealand culture.<br/>\nDesign work involved layout contributions in issues #36 - 54. <br/><br/>This included a regular recurring spread \"Ahakoa he iti, he pounamu\" - a well-known Māori\nsaying meaning \"Although it is small, it is a treasure\""
     },
     "13": {
       "html_badge": "Design / Video / Stage",
@@ -292,13 +292,15 @@ const projectData = {
           "title": "localImage:images/lobo.jpg"
         }
       ]
-    }
-  },
+    },
     "15": {
       "html_badge": "Reach out!",
       "title": "Reach out!",
-      "youtube": "https://www.youtube.com/live/7HxENNQql38?si=cu8cx1tM4td41xce"
-    },
+      "youtube": "https://www.youtube.com/live/7HxENNQql38?si=cu8cx1tM4td41xce
+	  https://youtu.be/7HxENNQql38?t=10500
+	  "
+    }
+  },
   "project_order": [
     "4",
     "1",
@@ -309,6 +311,4 @@ const projectData = {
     "12",
     "15"
   ]
-
 };
-
