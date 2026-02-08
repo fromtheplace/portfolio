@@ -95,7 +95,7 @@ modalEl.scrollTop = 0; modalContent.scrollTop = 0; requestAnimationFrame(() => {
 
   // Title and description
   modalTitle.textContent = data.title || '';
-  modalDescription.textContent = data.description || '';
+  modalDescription.innerHTML = data.description || '';
 
   // Credits
   modalBody.innerHTML = data.creditsHTML || '';
