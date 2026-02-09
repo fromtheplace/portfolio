@@ -23,8 +23,8 @@ const projectData = {
           "title": "Reel #1"
         }
       ],
-      "description": "Multicam live video production, live camera projection, live audio mastering, after film production, Long and short-form video publishing.",
-      "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Multicam live video production</li>\n        <li>Live on-stage camera projection</li>\n        <li>Live Audio Mastering</li>\n        <li>After-Film Production</li>\n        <li>Long-Form & Short-Form Video Publishing</li>\n      </ul>\n    </div>",
+      "description": "Ōtepoti Hip-Hop Hustle has grown from humble beginnings as a part of the Dunedin Fringe Festival to now feature over 30 artists from throughout the South Island.  <br/><br/>Since the 2022 event <strong><em>From the Place</em></strong> has created and hosted the event performances and afterfilms.",
+      "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Multicam live video production</li>\n        <li>Live on-stage camera projection</li>\n        <li>After-Film Production</li>\n        <li>Long-Form & Short-Form Video Publishing</li>\n      </ul>\n    </div>",
       "html_badge": "Video / Production",
       "html_image": "images/OHHH+2024+JLP.jpg",
       "html_h4": "Ōtepoti Hip Hop Hustle",
@@ -81,7 +81,7 @@ const projectData = {
         "images/MFP234.jpg",
         "images/mfp0.jpg"
       ],
-      "description": "In February 2020, just before lockdowns, New New New hosted its largest and most ambitious line-up to date. Music for People featured 11 genre-spanning acts, from rap to rock and everything in between. The follow-up expanded to 32 acts across two distinct sessions: an afternoon in St Paul's Cathedral and an evening at Starters Bar. <br/>  <strong><em>From the Place</em></strong>  led both the creative and technical direction, developing a cohesive visual identity and a multi-platform production workflow. This included multicam live video streaming for both sessions, real-time on-site camera projection, and live audio mastering for high-fidelity broadcast and archival delivery. All graphic assets—across print, digital, and motion—were designed in-house, along with a custom ecommerce and ticketing platform featuring artist profiles, schedules, and sales integration. The result was a seamless, hybrid production that bridged audiences across spaces and styles, delivering a unified experience in both physical and digital form.",
+      "description": "In February 2020, just before lockdowns, New New New hosted its largest and most ambitious line-up to date. Music for People featured 11 genre-spanning acts, from rap to rock and everything in between. The follow-up expanded to 32 acts across two distinct sessions: an afternoon in St Paul's Cathedral and an evening at Starters Bar. <br/><br/>  <strong><em>From the Place</em></strong>  led both the creative and technical direction, developing a cohesive visual identity and a multi-platform production workflow. This included multicam live video streaming for both sessions, real-time on-site camera projection, and live audio mastering for high-fidelity broadcast and archival delivery. All graphic assets—across print, digital, and motion—were designed in-house, along with a custom ecommerce and ticketing platform featuring artist profiles, schedules, and sales integration. The result was a seamless, hybrid production that bridged audiences across spaces and styles, delivering a unified experience in both physical and digital form.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Multicam Live Video Production</li>\n        <li>Live Audio Mastering</li>\n        <li>Graphic Design</li>\n        <li>Ecommerce/Ticketing website</li>\n        <li>Music Compostion/Teaser Video Production</li>\n      </ul>\n    </div>",
       "html_badge": "Design / Video / Stream",
       "html_image": "images/mfp0.jpg",
@@ -91,7 +91,7 @@ const projectData = {
     "3": {
       "title": "Nook & Cranny Music Fest",
       "youtube": "WImSgUXMGC0",
-      "description": "In-person events weren’t possible during lockdown. The Nook & Cranny Music Festival was reimagined —  fully online. The normally library-based festival evolved  from our collaborative response that brought local artists together in a single, curated broadcast.\n\n<strong><em>From the Place</em></strong> supported the festival end-to-end, coordinating promotion and administration while delivering a polished livestream with live-mastered audio and custom on-screen graphics. The result was a cohesive, high-quality broadcast that preserved the festival’s presence during lockdown and offered audiences a shared live music experience at a time when it mattered most.",
+      "description": "In-person events weren’t possible during lockdown. The Nook & Cranny Music Festival was reimagined —  fully online. The normally library-based festival evolved  from our collaborative response that brought local artists together in a single, curated broadcast.\n<br/><br/>\n<strong><em>From the Place</em></strong> supported the festival end-to-end, coordinating promotion and administration while delivering a polished livestream with live-mastered audio and custom on-screen graphics. The result was a cohesive, high-quality broadcast that preserved the festival’s presence during lockdown and offered audiences a shared live music experience at a time when it mattered most.",
       "chips": [
         {
           "type": "youtube",
@@ -170,7 +170,7 @@ const projectData = {
           "timestamp": "7h28m51s"
         }
       ],
-      "description": "Initially Poster/campaign design work lead to collaborating to create and impromptu online music fest.\n\nDuring the pandemic, livestreaming grew popular. Waitati Music Festival was the first local event streamed, aggregating all the artists perfomances into a single stream. <strong><em>From the Place</em></strong> managed all \nfacets of promotion and admin, through to producing live mastered audio and on screen display within a seemless broadcast - saving the event's continutiy and providng a production that stood out through the lockdown.",
+      "description": "Initially Poster/campaign design work lead to collaborating to create and impromptu online music fest.\n<br/><br/>\nDuring the pandemic, livestreaming grew popular. Waitati Music Festival was the first local event streamed, aggregating all the artists perfomances into a single stream. <strong><em>From the Place</em></strong> managed all \nfacets of promotion and admin, through to producing live mastered audio and on screen display within a seemless broadcast - saving the event's continutiy and providng a production that stood out through the lockdown.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Campaign Design</li>\n        <li>Livestream production</li>\n\t <li>On Screen graphics</li>\n      </ul>\n    </div>",
       "html_badge": "Design / Video / Stream",
       "html_image": "images/wmfl.jpg",
@@ -194,7 +194,7 @@ const projectData = {
     "6": {
       "youtube": "ox4QqeyNykQ",
       "title": "Ollie Crooks - Take you There (LP)",
-      "description": "\"Take You There\" captures Ollie Crooks in a period of creative exploration that moves between introspective folk and groove-driven indie soul. <strongAside from cover and campaign design, <strong><em>From the Place</em></strong> tracked, produced and mastered the work, and created a music video for a single '$3 a Litre', filmed in Burkes Pass, New Zealand.",
+      "description": "\"Take You There\" captures Ollie Crooks in a period of creative exploration that moves between introspective folk and groove-driven indie soul. <strong<br/><br/>Aside from cover and campaign design, <strong><em>From the Place</em></strong> tracked, produced and mastered the work, and created a music video for a single '$3 a Litre', filmed in Burkes Pass, New Zealand.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Cover & campaign design</li>\n        <li>Album production </li>\n        <li>Video production </li>\n      </ul>\n    </div>",
       "html_badge": "Recording / Design / Video",
       "html_image": "images/OllieCrooks_cover2.png",
@@ -268,7 +268,7 @@ const projectData = {
         "images/TKspread1.jpg",
         "images/TKspread2.jpg"
       ],
-      "description": "Te Karaka is the flagship Ngāi Tahu quarterly publication covering the best of current Māori, indigenous and New Zealand culture.<br/>\nDesign work involved layout contributions in issues #36 - 54. <br/><br/>This included a regular recurring spread \"Ahakoa he iti, he pounamu\" - a well-known Māori\nsaying meaning \"Although it is small, it is a treasure\""
+      "description": "Te Karaka is the flagship Ngāi Tahu quarterly publication covering the best of current Māori, indigenous and New Zealand culture. <br/><br/>Design work involved layout contributions in issues #36 - 54. This included a regular recurring spread “Ahakoa he iti, he pounamu” - a well-known Māori saying meaning “Although it is small, it is a treasure”."
     },
     "13": {
       "html_badge": "Design / Video / Stage",
