@@ -74,11 +74,6 @@ const projectData = {
           "url": "https://www.odt.co.nz/entertainment/music/people-get-ready",
           "title": "ODT Article #2",
           "localImage": "images/mfpodt2.jpg"
-        },
-        {
-          "type": "url",
-          "url": "https://www.facebook.com/events/2904413966508867",
-          "title": "MFP2 FB Event"
         }
       ],
       "images": [
@@ -96,7 +91,7 @@ const projectData = {
     "3": {
       "title": "Nook & Cranny Music Fest",
       "youtube": "WImSgUXMGC0",
-      "description": "Multicam live video production and live audio mastering. Campaign design and Livestream production during COVID lockdowns.",
+      "description": "In-person events weren’t possible during lockdown. The Nook & Cranny Music Festival was reimagined —  fully online. The normally library-based festival evolved  from our collaborative response that brought local artists together in a single, curated broadcast.\n\n<strong><em>From the Place</em></strong> supported the festival end-to-end, coordinating promotion and administration while delivering a polished livestream with live-mastered audio and custom on-screen graphics. The result was a cohesive, high-quality broadcast that preserved the festival’s presence during lockdown and offered audiences a shared live music experience at a time when it mattered most.",
       "chips": [
         {
           "type": "youtube",
@@ -132,7 +127,7 @@ const projectData = {
           "localImage": "images/ncodt.jpg"
         }
       ],
-      "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Multicam Live Video Production</li>\n        <li>Live Camera Projection</li>\n      </ul>\n    </div>",
+      "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Campaign design</li>        \n<li>Multicam Live Video Production</li>\n        <li>Animation & Video production</li>\n      </ul>\n    </div>",
       "images": [
         "images/nook_poster.jpg",
         "images/ncmtv.jpg",
@@ -199,7 +194,7 @@ const projectData = {
     "6": {
       "youtube": "ox4QqeyNykQ",
       "title": "Ollie Crooks - Take you There (LP)",
-      "description": "\"Take You There\" captures Ollie Crooks in a period of creative exploration that moves between introspective folk and groove-driven indie soul. <strongAside from cover and campaign design, <em>From the Place</em></strong> tracked, produced and mastered the work. Additionally, touring with his band and on drums, consequent shots for a music video of $3 a Litre were filmed in Dansy's pass.",
+      "description": "\"Take You There\" captures Ollie Crooks in a period of creative exploration that moves between introspective folk and groove-driven indie soul. <strongAside from cover and campaign design, <strong><em>From the Place</em></strong> tracked, produced and mastered the work, and created a music video for a single '$3 a Litre', filmed in Burkes Pass, New Zealand.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Cover & campaign design</li>\n        <li>Album production </li>\n        <li>Video production </li>\n      </ul>\n    </div>",
       "html_badge": "Recording / Design / Video",
       "html_image": "images/OllieCrooks_cover2.png",
