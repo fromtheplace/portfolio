@@ -199,8 +199,8 @@ const projectData = {
     "6": {
       "youtube": "ox4QqeyNykQ",
       "title": "Ollie Crooks - Take you There (LP)",
-      "description": "\"Take You There\" captures Ollie Crooks in a period of creative exploration that moves between introspective folk and groove-driven indie soul. <strongAside from cover and campaign design, <em>From the Place</em></strong> tracked, produced and mastered the work.",
-      "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Lighting Design</li>\n        <li>Stage Management</li>\n      </ul>\n    </div>",
+      "description": "\"Take You There\" captures Ollie Crooks in a period of creative exploration that moves between introspective folk and groove-driven indie soul. <strongAside from cover and campaign design, <em>From the Place</em></strong> tracked, produced and mastered the work. Additionally, touring with his band and on drums, consequent shots for a music video of $3 a Litre were filmed in Dansy's pass.",
+      "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Cover & campaign design</li>\n        <li>Album production </li>\n        <li>Video production </li>\n      </ul>\n    </div>",
       "html_badge": "Recording / Design / Video",
       "html_image": "images/OllieCrooks_cover2.png",
       "html_h4": "Ollie Crooks - Take You There (LP)",
@@ -312,6 +312,6 @@ const projectData = {
     "3",
     "2",
     "12",
-	"15"
+    "15"
   ]
 };
