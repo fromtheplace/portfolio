@@ -96,7 +96,7 @@ const projectData = {
     "3": {
       "title": "Nook & Cranny Music Fest",
       "youtube": "WImSgUXMGC0",
-      "description": "Multicam live video production, live camera projection, live audio mastering, after film production, Long and short-form video publishing.",
+      "description": "Multicam live video production and live audio mastering. Campaign design and Livestream production during COVID lockdowns.",
       "chips": [
         {
           "type": "youtube",
@@ -199,7 +199,7 @@ const projectData = {
     "6": {
       "youtube": "ox4QqeyNykQ",
       "title": "Ollie Crooks - Take you There (LP)",
-      "description": "Description for project six. Event recap, highlights, and interviews.",
+      "description": "\"Take You There\" captures Ollie Crooks in a period of creative exploration that moves between introspective folk and groove-driven indie soul. <strongAside from cover and campaign design, <em>From the Place</em></strong> tracked, produced and mastered the work.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Lighting Design</li>\n        <li>Stage Management</li>\n      </ul>\n    </div>",
       "html_badge": "Recording / Design / Video",
       "html_image": "images/OllieCrooks_cover2.png",
@@ -221,7 +221,7 @@ const projectData = {
     "7": {
       "youtube": "DPQRV7qTxT0",
       "title": "Fonterra - Infographic Video Production",
-      "description": "This project was created to commemorate 100 years of lactose production in New Zealand.\nWork included Storyboard planning, 2D graphic creation, 2D Animation, Soundtrack composition and production.",
+      "description": "This project was created to commemorate 100 years of lactose production in New Zealand.\nWork included Storyboard planning, graphic creation, 2D Animation, Soundtrack composition and production.",
       "creditsHTML": "<div class=\"credit-list\">\n      <h2>Scope</h2>\n      <ul>\n        <li>Animation design & production</li>\n        <li>Music Composition</li>\n        <li>Voice over production</li>\n      </ul>\n    </div>",
       "html_badge": "Video / Audio / Design",
       "html_image": "images/fonterra.jpg",
@@ -312,6 +312,6 @@ const projectData = {
     "3",
     "2",
     "12",
-    "15"
+	"15"
   ]
 };
